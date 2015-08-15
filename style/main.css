@@ -1,3 +1,13 @@
+/**
+
+    TODO:
+    - Have navigation into section that when moused over slide up to reveal hidden photo
+    - main background should be white
+    - decide on if only one page with links that scroll or multiple pages.
+
+**/
+
+
 html, body, nav, li, header, h1, h2, h3, h4, h5, ul {
     margin: 0;
     padding: 0;
@@ -21,14 +31,18 @@ nav {
     background: linear-gradient(to bottom, #0F2E0F, #1A4C1A, #297A29, #339933)
 }
 
+.slide {
+    display: inline-block;
+    width: 20%;
+}
 nav li {
     display: inline;
     margin-right: 20px;
 }
 
 nav ul {
-    text-align: center;
     height: 100%;
+    text-align: center;
 }
 
 header {
