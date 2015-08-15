@@ -49,21 +49,32 @@ nav ul {
     text-align: center;
 }
 
-header, section {
+header, main {
     width: 700px;
     margin: 0 auto;
     text-align: center;
 }
 
-#main-header {
-    padding: 5em 0 0 0;
+.main-header {
     text-align: center;
-    height: 600px;
+    height: 750px;
     width: auto;
     background: #888888 url("../images/main_background.jpg") center center no-repeat;
+    color: #E68032;
+    font-weight: 500;
+}
+
+.main-header h1, h2 {
+    padding-top: 200px;
+    font-size: 150px;
+    text-shadow: -5px 3px 1px #3A2F23
+}
+
+.main-header h2 {
+    font-size: 51px;
+    padding: 0;
 }
 
 h1 {
     font-family: 'Macondo', cursive;
-    font-size: 50px;
 }
