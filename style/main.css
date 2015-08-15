@@ -60,11 +60,11 @@ header, main {
     height: 750px;
     width: auto;
     background: #888888 url("../images/main_background.jpg") center center no-repeat;
-    color: #E68032;
+    color: #AF6832;
     font-weight: 500;
 }
 
-.main-header h1, h2 {
+.main-header h1, .main-header h2 {
     padding-top: 200px;
     font-size: 150px;
     text-shadow: -5px 3px 1px #3A2F23
@@ -77,4 +77,20 @@ header, main {
 
 h1 {
     font-family: 'Macondo', cursive;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6CFF66;
+    text-shadow: -2px 2px 1px #12600F;
+    -webkit-transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+       -moz-transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+        -ms-transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+         -o-transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+            transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+}
+
+nav a:hover {
+    color: #66FFF5;
+    text-shadow: -2px 2px 1px #0F5660;
 }
