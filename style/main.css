@@ -8,12 +8,13 @@
 **/
 
 
-html, body, nav, li, header, h1, h2, h3, h4, h5, ul {
+html, body, nav, li, header, h1, h2, h3, h4, h5, ul, p, a, section {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
+    font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 html, body {
@@ -48,4 +49,9 @@ nav ul {
 header {
     margin: 5em 0 0 0;
     text-align: center;
+}
+
+h1 {
+    font-family: 'Macondo', cursive;
+    font-size: 50px;
 }
