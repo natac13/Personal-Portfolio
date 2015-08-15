@@ -8,7 +8,9 @@
 **/
 
 
-html, body, nav, li, header, h1, h2, h3, h4, h5, ul, p, a, section {
+html, body, nav, li, header,
+h1, h2, h3, h4, h5, ul, ol,
+p, a, section {
     margin: 0;
     padding: 0;
     border: 0;
@@ -28,17 +30,18 @@ body {
 nav {
     z-index: 10;
     width: 100%;
-    padding-top: 300px;
+    padding-top: 100px;
     background: linear-gradient(to bottom, #0F2E0F, #1A4C1A, #297A29, #339933)
 }
 
 .slide {
     display: inline-block;
-    width: 20%;
+    width: auto;
+    margin-right: 40px;
 }
 nav li {
-    display: inline;
-    margin-right: 20px;
+    list-style: none;
+    font-size: 2em;
 }
 
 nav ul {
@@ -46,9 +49,18 @@ nav ul {
     text-align: center;
 }
 
-header {
-    margin: 5em 0 0 0;
+header, section {
+    width: 700px;
+    margin: 0 auto;
     text-align: center;
+}
+
+#main-header {
+    padding: 5em 0 0 0;
+    text-align: center;
+    height: 600px;
+    width: auto;
+    background: #888888 url("../images/main_background.jpg") center center no-repeat;
 }
 
 h1 {
