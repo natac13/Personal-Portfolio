@@ -37,18 +37,18 @@ body {
 nav {
     z-index: 10;
     width: 100%;
-    padding-top: 100px;
-    background: linear-gradient(to bottom, #19260C, #354C1E, #55802C, #74B335)
+    padding-top: 30px;
+    background: linear-gradient(to bottom, #18260B, #2C4019, #354C1E, #37541B, #42661D)
 }
 
 .slide {
     display: inline-block;
     width: auto;
-    margin-right: 40px;
+    margin-right: 80px;
 }
 nav li {
     list-style: none;
-    font-size: 2em;
+    font-size: 32px;
 }
 
 nav ul {
@@ -57,16 +57,18 @@ nav ul {
 }
 
 header, main {
-    width: 700px;
+    width: 1000px;
     margin: 0 auto;
     text-align: center;
 }
+
 
 header {
     color: #2D4C3C;
     font-weight: bold;
     border-bottom: 1px solid #0F1905;
-    margin-bottom: 10px;
+    margin: 0 auto 10px auto;
+    width: 700px
 }
 
 a {
@@ -74,19 +76,26 @@ a {
     color: #fff;
 }
 
+footer {
+    background: linear-gradient(to top, #080C03, #15210A, #202E12, #30451B, #3B591E);
+    color: #FFB319;
+    height: 200px;
+}
+
 .main-header {
     text-align: center;
     height: 750px;
     width: auto;
-    background: #888888 url("../images/main_background.jpg") center center no-repeat;
-    color: #B37835;
+    background: #888888 url("../images/main_background.jpg") no-repeat center;
+    color: #B38535;
+    color: #FFB319;
     font-weight: 500;
 }
 
-.main-header h1, .main-header h2 {
+.main-header h1 {
     padding-top: 200px;
-    font-size: 180px;
-    text-shadow: -5px 3px 1px #261605
+    font-size: 7em;
+    /*text-shadow: -5px 3px 1px #261605*/
 }
 
 .main-header h2 {
@@ -95,49 +104,51 @@ a {
 }
 
 h1 {
-    /*font-family: 'Macondo', cursive;*/
+    font-family: 'Macondo', cursive;
     /*font-family: 'Tangerine', cursive;*/
-    font-family: egyptian serif;
+    /*font-family: egyptian serif;*/
 }
 
 nav a {
     text-decoration: none;
-    color: #2D4C3C;
-    text-shadow: -2px 2px 1px #143323;
-    font-weight: normal;
-    -webkit-transition: color .4s linear, text-shadow .4s linear,
-    font-weight .8s ease-in-out;
-       -moz-transition: color .4s linear, text-shadow .4s linear,
-       font-weight .8s ease-in-out;
-        -ms-transition: color .4s linear, text-shadow .4s linear,
-        font-weight .8s ease-in-out;
-         -o-transition: color .4s linear, text-shadow .4s linear,
-         font-weight .8s ease-in-out;
-            transition: color .4s linear, text-shadow .4s linear,
-            font-weight .8s ease-in-out;
+    color: #7DB395;
+    font-style: normal;
+    -webkit-transition: color .6s linear, font-style .4s ease-in-out;
+       -moz-transition: color .6s linear, font-style .4s ease-in-out;
+        -ms-transition: color .6s linear, font-style .4s ease-in-out;
+         -o-transition: color .6s linear, font-style .4s ease-in-out;
+            transition: color .6s linear, font-style .4s ease-in-out;
 }
 
 nav a:hover {
-    font-weight: bold;
-    color: #54FF33;
-    text-shadow: -3px 2px 1px #0C3305;
+    /*font-style: italic;*/
+    color: #FFCD66;
+}
+
+.projects {
+    width: 700px;
+    margin: 0 auto;
 }
 .photo-gallery {
-    background: #999999 url('../images/photo-gallery.png') center no-repeat;
+    background: #999999 url('../images/photo-gallery.png') no-repeat center;
 }
 
 .weather-app {
-    background: #999999 url('../images/weather-app.png') center no-repeat;
+    background: #999999 url('../images/weather-app.png') no-repeat center;
 }
 
 .random-quote {
-    background: #999999 url('../images/random-quote.png') center no-repeat;
+    background: #999999 url('../images/random-quote.png') no-repeat center;
 }
 
 .project {
     height: 330px;
     width: 700px;
-    box-shadow: -5px 5px 3px #3D4C44, 5px -5px 3px #3D4C44, 5px 5px 3px #3D4C44, -5px -5px 3px #3D4C44;
+    box-shadow:
+        -5px 5px 7px #28332E,
+        5px -5px 7px #28332E,
+        5px 5px 7px #28332E,
+        -5px -5px 7px #28332E;
     border-radius: 15px;
     margin: 15px auto;
     -webkit-transition: box-shadow 0.3s ease-in-out;
@@ -148,14 +159,36 @@ nav a:hover {
 }
 
 .project:hover {
-    box-shadow: -1px 1px 0 #3D4C44, 1px -1px 0 #3D4C44, 1px 1px 0 #3D4C44, -1px -1px 0 #3D4C44;
+    box-shadow:
+        -1px 1px 5px #28332E,
+        1px -1px 5px #28332E,
+        1px 1px 5px #28332E,
+        -1px -1px 5px #28332E;
 
 }
 
-.project h3 {
-    padding-top: 125px;
-    margin: auto;
-    width: 150px;
+h3 {
+    color: #2D4C3C;
+    font-weight: bold;
+}
+
+.skills-certificates {
+
+}
+
+.skill {
+    display: inline;
+    padding: 5px 5px 5px 5px;
+    box-sizing: border-box;
+    color: #000;
+}
+
+.skill a {
+    color: #000;
+}
+
+.python {
+
 }
 
 
