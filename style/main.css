@@ -7,6 +7,13 @@
 
 **/
 
+/*
+Base color Hue: 90 deg; Can go to 30-150 deg.
+
+Hue:90
+Saturation:65
+Value/ligthness:50
+ */
 
 html, body, nav, li, header,
 h1, h2, h3, h4, h5, ul, ol,
@@ -25,13 +32,13 @@ html, body {
 }
 
 body {
-    background: #dddddd;
+    background: #F3FFF9;
 }
 nav {
     z-index: 10;
     width: 100%;
     padding-top: 100px;
-    background: linear-gradient(to bottom, #0F2E0F, #1A4C1A, #297A29, #339933)
+    background: linear-gradient(to bottom, #19260C, #354C1E, #55802C, #74B335)
 }
 
 .slide {
@@ -55,19 +62,31 @@ header, main {
     text-align: center;
 }
 
+header {
+    color: #2D4C3C;
+    font-weight: bold;
+    border-bottom: 1px solid #0F1905;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .main-header {
     text-align: center;
     height: 750px;
     width: auto;
     background: #888888 url("../images/main_background.jpg") center center no-repeat;
-    color: #AF6832;
+    color: #B37835;
     font-weight: 500;
 }
 
 .main-header h1, .main-header h2 {
     padding-top: 200px;
-    font-size: 150px;
-    text-shadow: -5px 3px 1px #3A2F23
+    font-size: 180px;
+    text-shadow: -5px 3px 1px #261605
 }
 
 .main-header h2 {
@@ -76,23 +95,67 @@ header, main {
 }
 
 h1 {
-/*    font-family: 'Macondo', cursive;*/
-    font-family: 'Tangerine', cursive;
-    /*font-family: egyptian serif;*/
+    /*font-family: 'Macondo', cursive;*/
+    /*font-family: 'Tangerine', cursive;*/
+    font-family: egyptian serif;
 }
 
 nav a {
     text-decoration: none;
-    color: #6CFF66;
-    text-shadow: -2px 2px 1px #12600F;
-    -webkit-transition: color 0.5s linear, text-shadow 0.5s linear;
-       -moz-transition: color 0.5s linear, text-shadow 0.5s linear;
-        -ms-transition: color 0.5s linear, text-shadow 0.5s linear;
-         -o-transition: color 0.5s linear, text-shadow 0.5s linear;
-            transition: color 0.5s linear, text-shadow 0.5s linear;
+    color: #2D4C3C;
+    text-shadow: -2px 2px 1px #143323;
+    font-weight: normal;
+    -webkit-transition: color .4s linear, text-shadow .4s linear,
+    font-weight .8s ease-in-out;
+       -moz-transition: color .4s linear, text-shadow .4s linear,
+       font-weight .8s ease-in-out;
+        -ms-transition: color .4s linear, text-shadow .4s linear,
+        font-weight .8s ease-in-out;
+         -o-transition: color .4s linear, text-shadow .4s linear,
+         font-weight .8s ease-in-out;
+            transition: color .4s linear, text-shadow .4s linear,
+            font-weight .8s ease-in-out;
 }
 
 nav a:hover {
-    color: #66FFF5;
-    text-shadow: -2px 2px 1px #0F5660;
+    font-weight: bold;
+    color: #54FF33;
+    text-shadow: -3px 2px 1px #0C3305;
 }
+.photo-gallery {
+    background: #999999 url('../images/photo-gallery.png') center no-repeat;
+}
+
+.weather-app {
+    background: #999999 url('../images/weather-app.png') center no-repeat;
+}
+
+.random-quote {
+    background: #999999 url('../images/random-quote.png') center no-repeat;
+}
+
+.project {
+    height: 330px;
+    width: 700px;
+    box-shadow: -5px 5px 3px #3D4C44, 5px -5px 3px #3D4C44, 5px 5px 3px #3D4C44, -5px -5px 3px #3D4C44;
+    border-radius: 15px;
+    margin: 15px auto;
+    -webkit-transition: box-shadow 0.3s ease-in-out;
+       -moz-transition: box-shadow 0.3s ease-in-out;
+        -ms-transition: box-shadow 0.3s ease-in-out;
+         -o-transition: box-shadow 0.3s ease-in-out;
+            transition: box-shadow 0.3s ease-in-out;
+}
+
+.project:hover {
+    box-shadow: -1px 1px 0 #3D4C44, 1px -1px 0 #3D4C44, 1px 1px 0 #3D4C44, -1px -1px 0 #3D4C44;
+
+}
+
+.project h3 {
+    padding-top: 125px;
+    margin: auto;
+    width: 150px;
+}
+
+
