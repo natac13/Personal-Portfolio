@@ -80,6 +80,7 @@ footer {
     background: linear-gradient(to top, #080C03, #15210A, #202E12, #30451B, #3B591E);
     color: #FFB319;
     height: 200px;
+    position: relative;
 }
 
 .main-header {
@@ -189,6 +190,43 @@ h3 {
 
 .python {
 
+}
+.contact {
+    width: 700px;
+    position: relative;
+    top: 32px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 15px;
+    height: auto;
+    text-align: center;
+}
+.social-link {
+    margin: 15px 10px 15px 10px;
+    display: inline-block;
+}
+.github {
+    text-indent: -99999px;
+    background: #fff url('../images/GitHub-Mark-32px.png') no-repeat center;
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+.codepen {
+    text-indent: -99999px;
+    background: #fff url('../images/Button-Fill-Black-Small.png') no-repeat center;
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+.linkedin {
+    text-indent: -99999px;
+    background: #fff url('../images/In-2CRev-34px-R.png') no-repeat center;
+    width: 32px;
+    height: 32px;
+    display: block;
+    background-position: 0 0;
 }
 
 
