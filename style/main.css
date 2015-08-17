@@ -42,7 +42,7 @@ body {
 nav {
     z-index: 10;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 3em;
     background: linear-gradient(to bottom, #18260B, #2C4019, #354C1E, #37541B, #42661D);
 }
 
@@ -62,7 +62,7 @@ nav ul {
 }
 
 header, main {
-    width: 100em;
+    width: 55%;
     margin: 0 auto;
     text-align: center;
 }
@@ -73,7 +73,7 @@ header {
     font-weight: bold;
     border-bottom: 1px solid #0F1905;
     margin: 0 auto 1em auto;
-    width: 70em;
+    width: 100%;
 }
 
 a {
@@ -83,33 +83,34 @@ a {
 
 section {
     margin-bottom: 1.3em;
+    width: 100%;
 }
 
 footer {
     background: linear-gradient(to top, #080C03, #15210A, #202E12, #30451B, #3B591E);
     color: #FFB319;
-    height: 20em;
+    height: 25%;
     position: relative;
 }
 
 .main-header {
     text-align: center;
-    height: 65em;
-    width: auto;
+    height: 80%;
+    width: 100%;
     background: #888888 url("../images/main_background.jpg") no-repeat center;
     background-position: 0 -20em;
     color: #B38535;
 }
 
 .main-header h1 {
-    padding-top: 1em;
-    font-size: 17em;
+    padding-top: 10%;
+    font-size: 1800%;
     font-weight: normal;
     /*text-shadow: -5px 3px 1px #261605*/
 }
 
 .main-header h2 {
-    font-size: 5em;
+    font-size: 450%;
     padding: 0;
     font-weight: normal;
 }
@@ -144,8 +145,8 @@ nav a:hover, nav a:focus {
 }
 
 p {
-    font-size: 2.5em;
-    line-height: 1.3em;
+    font-size: 250%;
+    line-height: 130%;
     color: #2D4C3C;
 }
 
@@ -158,7 +159,7 @@ p a:hover, p a:focus {
 }
 
 .projects {
-    width: 70em;
+    width: 100%;
     margin: 0 auto;
 }
 .photo-gallery {
@@ -174,8 +175,8 @@ p a:hover, p a:focus {
 }
 
 .project {
-    height: 33em;
-    width: 70em;
+    height: 30em;
+    width: 60%;
     box-shadow:
         -.5em .5em .7em #28332E,
         .5em -.5em .7em #28332E,
@@ -224,7 +225,7 @@ h3 {
 
 }
 .contact {
-    width: 50em;
+    width: 40%;
     position: relative;
     top: 1em;
     margin: 0 auto;
@@ -237,6 +238,18 @@ h3 {
     margin: 1.5em 1em 1.5em 1em;
     display: inline-block;
 }
+
+.social-links li:first-child {
+    font-size: 2em;
+    color: #2D4C3C;
+    list-style: none;
+}
+
+.social-links li:first-child:hover, .social-links li:first-child:focus {
+    font-size: 2.1em;
+    color: #2D4C3C;
+}
+
 .github {
     text-indent: -99999px;
     background: #fff url('../images/GitHub-Mark-32px.png') no-repeat center;
@@ -276,8 +289,51 @@ h3 {
 
 #contact header {
     color: #FFB319;
+    width: 50%;
     margin: 0 auto;
     border-bottom: 1px solid #FFB319;
 }
 
+/**********             Media Querys            ************/
 
+@media all and (max-width: 699px) and (min-width: 320px) {
+    .main-header h1 {
+        font-size: 1000%;
+    }
+
+    .main-header h2 {
+        font-size: 300%;
+    }
+
+    .slide {
+        margin-right: 4em;
+    }
+
+    nav li {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 200%;
+    }
+
+    .other-interest ul li {
+        font-size: 1.75em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    .skill a {
+        font-size: 1.5em;
+    }
+
+    .project {
+        height: 25em;
+        width: 100%;
+}
