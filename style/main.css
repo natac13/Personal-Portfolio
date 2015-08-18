@@ -296,17 +296,24 @@ h3 {
 
 /**********             Media Querys            ************/
 
-@media all and (max-width: 699px) and (min-width: 320px) {
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2), (max-width: 699px) {
     .main-header h1 {
-        font-size: 1000%;
+        font-size: 850%;
     }
 
     .main-header h2 {
-        font-size: 300%;
+        font-size: 275%;
     }
 
+    header, main {
+    width: 90%;
+}
+
     .slide {
-        margin-right: 4em;
+        margin-right: 3em;
     }
 
     nav li {
@@ -314,7 +321,7 @@ h3 {
     }
 
     p {
-        font-size: 200%;
+        font-size: 1.8em;
     }
 
     .other-interest ul li {
@@ -336,4 +343,10 @@ h3 {
     .project {
         height: 25em;
         width: 100%;
+    }
+
+    .contact {
+        width: 70%;
+        font-size: .9em;
+    }
 }
