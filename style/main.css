@@ -62,7 +62,7 @@ nav ul {
 }
 
 header, main {
-    width: 55%;
+    width: 65%;
     margin: 0 auto;
     text-align: center;
 }
@@ -103,8 +103,8 @@ footer {
 }
 
 .main-header h1 {
-    padding-top: 10%;
-    font-size: 1800%;
+    padding-top: 5%;
+    font-size: 1500%;
     font-weight: normal;
     /*text-shadow: -5px 3px 1px #261605*/
 }
@@ -309,15 +309,15 @@ h3 {
     }
 
     header, main {
-    width: 90%;
-}
+        width: 90%;
+    }
 
     .slide {
-        margin-right: 3em;
+        margin-right: 2.7em;
     }
 
     nav li {
-        font-size: 1.8em;
+        font-size: 2em;
     }
 
     p {
@@ -348,5 +348,75 @@ h3 {
     .contact {
         width: 70%;
         font-size: .9em;
+    }
+}
+
+/* ----------- Tablets ----------- */
+/* Portrait and Landscape */
+@media screen
+  and (min-width: 700px)
+  and (max-width: 1020px) {
+    .main-header h1 {
+        font-size: 1000%;
+    }
+
+    .main-header h2 {
+        font-size: 325%;
+    }
+
+    header, main {
+        width: 70%;
+    }
+
+    .slide {
+        margin-right: 3em;
+    }
+
+    nav li {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 2.5em;
+    }
+
+    .other-interest ul li {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 3.2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .skill a {
+        font-size: 1.5em;
+    }
+
+    .project {
+        height: 25em;
+        width: 100%;
+    }
+
+    .contact {
+        width: 70%;
+        font-size: 1.2em;
+    }
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+  and (min-width: 1021px)
+  and (max-width: 1250px) {
+
+    header, main {
+        width: 70%;
+    }
+
+    .project {
+        width: 80%;
     }
 }
