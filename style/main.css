@@ -239,13 +239,13 @@ h3 {
     display: inline-block;
 }
 
-.social-links li:first-child {
+.social-links li.other-link {
     font-size: 2em;
     color: #2D4C3C;
     list-style: none;
 }
 
-.social-links li:first-child:hover, .social-links li:first-child:focus {
+.social-links li.other-link:hover, .social-links li.other-link:focus {
     font-size: 2.1em;
     color: #2D4C3C;
 }
