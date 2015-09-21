@@ -24,6 +24,9 @@ p, a, section {
     font-family: 'Alegreya Sans SC', sans-serif;
 }
 
+
+
+
 html {
     font-size: 16px;
 }
@@ -44,6 +47,7 @@ nav {
     width: 100%;
     padding-top: 3em;
     background: linear-gradient(to bottom, #18260B, #2C4019, #354C1E, #37541B, #42661D);
+    box-shadow: 0px 40px 50px #999;
 }
 
 .slide {
@@ -100,6 +104,7 @@ footer {
     background: #888888 url("../images/main_background.jpg") no-repeat center;
     background-position: 0 -20em;
     color: #B38535;
+    box-shadow: 0px 4.5em 30em #ddd inset;
 }
 
 .main-header h1 {
@@ -162,6 +167,26 @@ p a:hover, p a:focus {
     width: 100%;
     margin: 0 auto;
 }
+
+.service-calculator {
+    background: #999 url('../images/serviceCalculator.png') no-repeat center;
+}
+
+.streaming-app {
+    background: #999 url('../images/twitchTV.png') no-repeat;
+    background-position: -13em;
+
+
+}
+
+.pomodoro-timer {
+    background: #999999 url('../images/pomodoro-timer.png') no-repeat center;
+}
+
+.calculator {
+    background: #999999 url('../images/calculator.png') no-repeat center;
+}
+
 .photo-gallery {
     background: #999999 url('../images/photo-gallery.png') no-repeat center;
 }
@@ -234,45 +259,33 @@ h3 {
     height: auto;
     text-align: center;
 }
+
 .social-link {
-    margin: 1.5em 1em 1.5em 1em;
     display: inline-block;
+    font-size: 4em;
+    margin-right: 0.5em;
+    -webkit-transition: font-size 0.2s linear;
+       -moz-transition: font-size 0.2s linear;
+        -ms-transition: font-size 0.2s linear;
+         -o-transition: font-size 0.2s linear;
+            transition: font-size 0.2s linear;
 }
 
-.social-links li.other-link {
+.social-link:hover, .social-link:focus {
+    font-size: 4.3em;
+}
+
+.social-links li.other-link a {
     font-size: 2em;
-    color: #2D4C3C;
+    color: #492C14 !important;
     list-style: none;
 }
 
-.social-links li.other-link:hover, .social-links li.other-link:focus {
+.social-links li.other-link a:hover, .social-links li.other-link a:focus {
     font-size: 2.1em;
-    color: #2D4C3C;
 }
 
-.github {
-    text-indent: -99999px;
-    background: #fff url('../images/GitHub-Mark-32px.png') no-repeat center;
-    width: 3.2em;
-    height: 3.2em;
-    display: block;
-}
-.codepen {
-    text-indent: -99999px;
-    background: #fff url('../images/Button-Fill-Black-Small.png') no-repeat center;
-    width: 3.2em;
-    height: 3.2em;
-    display: block;
-}
 
-.linkedin {
-    text-indent: -99999px;
-    background: #fff url('../images/In-2CRev-34px-R.png') no-repeat center;
-    width: 3.2em;
-    height: 3.2em;
-    display: block;
-    background-position: 0 0;
-}
 
 .other-interest ul li {
     list-style: none;
