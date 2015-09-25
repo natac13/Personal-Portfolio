@@ -1,3 +1,256 @@
 <!DOCTYPE html>
-<html> <head><meta charset=utf-8><meta name=description content="Sean Campbell's Portfolio"><meta name=author content="Sean Campbell"><meta name=viewport content="width=device-width, initial-scale=1"><link rel=stylesheet type=text/css href=style/main.min.css><link href=http://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Macondo rel=stylesheet type=text/css><link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css><script src=js/jquery-1.11.3.min.js></script><script src=js/main.js></script><title>Sean Campbell's Portfolio</title></head> <body> <nav> <ul> <div class=slide> <li><a href=#about>About</a></li> </div> <div class=slide> <li><a href=#projects>Projects</a></li> </div> <div class=slide> <li><a href=#skills-of-focus>Skills</a></li> </div> <div class=slide> <li><a href=#other-interests>Interests</a></li> </div> <div class=slide> <li><a href=#contact>Contact</a></li> </div> </ul> </nav> <header class=main-header> <h1>Sean Campbell</h1> <h2>Taking the career switch leap!</h2> </header><!-- /header --> <main> <section class=about> <header id=about> <h2>About Me</h2> </header><!-- /header --> <p id=bio>I am currently an electrical apprentice in my 3rd year. There are a few reasons I wish to make the career switch but mainly it is a lack of available work. I have been working through a bunch of tutorials online as well as using other resources such as <a href=http://www.freecodecamp.com/ target=_blank>Free Code Camp</a>, <a href=https://www.codeschool.com/paths target=_blank>Code School</a>, tons of books and some workshop modules I have come across. I have been at this since the winter of 2014 and now feel I have advanced my knowledge to the point of making this portfolio page to aid in the job finding process.</p> </section> <section class=projects> <header id=projects> <h2>Projects</h2> </header><!-- /projects --> <!--  Project Images which are links --> <h3>TwitchTV Streaming App</h3> <a href=http://codepen.io/natac13/full/OyMVpo target=_blank> <div class="streaming-app project"> </div> </a> <h3>Apartment Service Calculator CEC 2012</h3> <a href=http://codepen.io/natac13/full/rONazM?editors=110 target=_blank> <div class="service-calculator project"> </div> </a> <h3>Pomodoro Timer</h3> <a href=http://codepen.io/natac13/full/VvZewQ?editors=100 target=_blank> <div class="pomodoro-timer project"> </div> </a> <h3>Calculator</h3> <a href=http://codepen.io/natac13/full/xwwWve target=_blank> <div class="calculator project"> </div> </a> <h3>Weather APP</h3> <a href=http://codepen.io/natac13/full/qdvyMg/ target=_blank> <div class="weather-app project"> </div> </a> <h3>Random Quote</h3> <a href=http://codepen.io/natac13/full/vOPpjg target=_blank> <div class="random-quote project"> </div> </a> <h3>Photo Gallery PHP</h3> <a href=https://github.com/natac13/PHP-Advanced-OOP-project-MySQL/
-tree/master target=_blank> <div class="photo-gallery project"> </div> </a> </section><!-- end projects --> <section class=skills-of-focus> <header id=skills-of-focus> <h2>Skills Where I Focus Attention</h2> </header><!-- /skills-of-focus --> <ul class=skills> <li class="skill javascript"> <a href=https://en.wikipedia.org/wiki/JavaScript target=_blank title=JavaScript>JavaScript</a> </li> <li class="skill jquery"> <a href=https://jquery.com/ target=_blank title=jQuery> jQuery</a> </li> <li class="skill node"> <a href=https://nodejs.org/ target=_blank title=Nodejs> Nodejs</a> </li> <li class="skill html5"> <a href=http://www.w3.org/ target=_blank title="World Wide Web Consortium">HTML5</a> </li> <li class="skill css3"> <a href=http://www.w3.org/ target=_blank title="World Wide Web Consortium">CSS3</a> </li> <li class="skill git"> <a href=https://github.com/ target=_blank title=GitHub> GitHub</a> </li> <li class="skill mysql"> <a href=https://www.mysql.com/ target=_blank title=MySQL> MySQL</a> </li> <li class="skill python"> <a href=https://www.python.org/ target=_blank title="Python Software Foundation">Python</a> </li> <li class="skill php"> <a href=http://php.net/ target=_blank title=PHP>PHP</a> </li> </ul> </section> <section class=other-interest> <header id=other-interests> <h2>Other Interest</h2> </header><!-- /other-interest --> <ul> <li>Yoga</li> <li>Bicycling</li> <li>Vegan LifeStyle</li> <li>GeoPolitics</li> <li>Meditation</li> <li>Reading</li> <li>Clean Living</li> </ul> </section> </main> <footer id=contact> <header> <h2>Contact Me!</h2> </header><!-- /contact --> <div class=contact> <p>sean.campbell13@gmail.com</p> <ul class=social-links> <li class=other-link> <a href=http://www.freecodecamp.com/natac13 target=_blank title="Check out Free Code Camp!">My Free Code Camp Profile!</a> </li> <li class=social-link> <a href=http://github.com/natac13 class=github target=_blank> <i class="fa fa-github"></i></a> </li> <li class=social-link> <a href=https://natacseanc.wordpress.com/ target=_blank title="Check out My Blog!"><i class="fa fa-wordpress"></i></a> </li> <li class=social-link> <a href=http://codepen.io/natac13/ class=codepen target=_blank> <i class="fa fa-codepen"></i></a> </li> <li class=social-link> <a href=https://ca.linkedin.com/pub/sean-campbell/b4/862/b90 class=linkedin target=_blank><i class="fa fa-linkedin"></i></a> </li> <li class=social-link> <a href=https://twitter.com/intent/tweet?screen_name=natac1311 class=twitter-mention-button data-related=natac1311> <i class="fa fa-twitter"></i></a> </li> </ul> </div> </footer> </body> </html> 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Sean Campbell's Portfolio">
+    <meta name="author" content="Sean Campbell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Main style sheet -->
+    <link rel="stylesheet" type="text/css" href="css/dist/style.min.css">
+
+    <!-- import fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Macondo'
+      rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <title>Sean Campbell's Portfolio</title>
+  </head>
+  <body>
+
+  <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#skills-of-focus">Skills</a></li>
+              <li><a href="#other-interests">Interest</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+<!--     <nav>
+      <ul>
+        <div class="slide">
+          <li><a href="#about">About</a></li>
+        </div>
+        <div class="slide">
+          <li><a href="#projects">Projects</a></li>
+        </div>
+        <div class="slide">
+          <li><a href="#skills-of-focus">Skills</a></li>
+        </div>
+        <div class="slide">
+          <li><a href="#other-interests">Interests</a></li>
+        </div>
+        <div class="slide">
+          <li><a href="#contact">Contact</a></li>
+        </div>
+      </ul>
+    </nav> -->
+
+    <header class="main-header">
+      <h1>Sean Campbell</h1>
+      <h2>Taking the career switch leap!</h2>
+    </header><!-- /header -->
+
+    <main>
+      <section class="about">
+        <header id="about">
+          <h2>About Me</h2>
+        </header><!-- /header -->
+        <p id="bio">I am currently an electrical apprentice in my 3rd year.
+There are a few reasons I wish to make the career switch but mainly it is a lack
+of available work. I have been working through a bunch of tutorials online as
+well as using other resources such as <a href="http://www.freecodecamp.com/"
+target="_blank">Free Code Camp</a>, <a href="https://www.codeschool.com/paths"
+target="_blank">Code School</a>, tons of books and some workshop modules I have
+come across. I have been at this since the winter of 2014 and now feel I have
+advanced my knowledge to the point of making this portfolio page to aid in the
+job finding process.</p>
+      </section>
+      <section class="projects">
+
+        <header id="projects">
+          <h2>Projects</h2>
+        </header><!-- /projects -->
+
+        <!--  Project Images which are links -->
+        <h3>TwitchTV Streaming App</h3>
+        <a href="http://codepen.io/natac13/full/OyMVpo"
+          target="_blank">
+          <div class="streaming-app project">
+
+          </div>
+        </a>
+
+        <h3>Free Code Camp News Stream</h3>
+        <a href="http://codepen.io/natac13/full/ZbOWpV"
+          target="_blank">
+          <div class="fcc-news project">
+
+          </div>
+        </a>
+
+        <h3>Apartment Service Calculator CEC 2012</h3>
+        <a href="http://codepen.io/natac13/full/rONazM?editors=110"
+          target="_blank">
+          <div class="service-calculator project">
+
+          </div>
+        </a>
+
+        <h3>Pomodoro Timer</h3>
+        <a href="http://codepen.io/natac13/full/VvZewQ?editors=100"
+          target="_blank">
+          <div class="pomodoro-timer project">
+
+          </div>
+        </a>
+
+        <h3>Calculator</h3>
+        <a href="http://codepen.io/natac13/full/xwwWve"
+          target="_blank">
+          <div class="calculator project">
+
+          </div>
+        </a>
+
+        <h3>Weather APP</h3>
+        <a href="http://codepen.io/natac13/full/qdvyMg/" target="_blank">
+          <div class="weather-app project">
+
+          </div>
+        </a>
+
+        <h3>Random Quote</h3>
+        <a href="http://codepen.io/natac13/full/vOPpjg" target="_blank">
+          <div class="random-quote project">
+
+          </div>
+        </a>
+
+        <h3>Photo Gallery PHP</h3>
+        <a href="https://github.com/natac13/PHP-Advanced-OOP-project-MySQL/
+tree/master" target="_blank">
+          <div class="photo-gallery project">
+
+          </div>
+        </a>
+      </section><!-- end projects -->
+
+      <section class="skills-of-focus">
+        <header id="skills-of-focus">
+          <h2>Skills Where I Focus Attention</h2>
+        </header><!-- /skills-of-focus -->
+
+        <ul class="skills">
+          <li class="skill javascript">
+             <a href="https://en.wikipedia.org/wiki/JavaScript"
+              target="_blank" title="JavaScript">JavaScript</a>
+          </li>
+          <li class="skill jquery">
+            <a href="https://jquery.com/" target="_blank" title="jQuery">
+              jQuery</a>
+          </li>
+          <li class="skill node">
+            <a href="https://nodejs.org/" target="_blank" title="Nodejs">
+              Nodejs</a>
+          </li>
+          <li class="skill html5">
+            <a href="http://www.w3.org/" target="_blank"
+              title="World Wide Web Consortium">HTML5</a>
+          </li>
+          <li class="skill css3">
+            <a href="http://www.w3.org/" target="_blank"
+              title="World Wide Web Consortium">CSS3</a>
+          </li>
+          <li class="skill git">
+            <a href="https://github.com/" target="_blank" title="GitHub">
+              GitHub</a>
+          </li>
+          <li class="skill mysql">
+            <a href="https://www.mysql.com/" target="_blank" title="MySQL">
+              MySQL</a>
+          </li>
+          <li class="skill python">
+            <a href="https://www.python.org/" target="_blank"
+              title="Python Software Foundation">Python</a>
+          </li>
+          <li class="skill php">
+            <a href="http://php.net/" target="_blank" title="PHP">PHP</a>
+          </li>
+        </ul>
+      </section>
+      <section class="other-interest">
+        <header id="other-interests">
+          <h2>Other Interest</h2>
+        </header><!-- /other-interest -->
+        <ul>
+          <li>Yoga</li>
+          <li>Bicycling</li>
+          <li>Vegan LifeStyle</li>
+          <li>GeoPolitics</li>
+          <li>Meditation</li>
+          <li>Reading</li>
+          <li>Clean Living</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer id="contact">
+    <header>
+      <h2>Contact Me!</h2>
+    </header><!-- /contact -->
+    <div class="contact">
+      <p>sean.campbell13@gmail.com</p>
+      <ul class="social-links">
+        <li class="other-link">
+          <a href="http://www.freecodecamp.com/natac13" target="_blank"
+            title="Check out Free Code Camp!">My Free Code Camp Profile!</a>
+        </li>
+        <li class="social-link">
+          <a href="http://github.com/natac13" class="github" target="_blank">
+            <i class="fa fa-github"></i></a>
+        </li>
+        <li class="social-link">
+          <a href="https://natacseanc.wordpress.com/" target="_blank"
+            title="Check out My Blog!"><i class="fa fa-wordpress"></i></a>
+        </li>
+        <li class="social-link">
+          <a href="http://codepen.io/natac13/" class="codepen" target="_blank">
+            <i class="fa fa-codepen"></i></a>
+        </li>
+        <li class="social-link">
+          <a href="https://ca.linkedin.com/pub/sean-campbell/b4/862/b90"
+            class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </li>
+        <li class="social-link">
+          <a href="https://twitter.com/intent/tweet?screen_name=natac1311"
+            class="twitter-mention-button" data-related="natac1311">
+              <i class="fa fa-twitter"></i></a>
+        </li>
+      </ul>
+    </div>
+    </footer>
+
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+

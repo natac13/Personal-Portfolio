@@ -12,7 +12,15 @@ p, a, section {
 }
 
 
-
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+    li {
+      float: none;
+      display: inline-block;
+      margin-right: 2em;
+    }
+  }
 
 html {
     font-size: 16px;

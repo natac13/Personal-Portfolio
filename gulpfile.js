@@ -40,7 +40,7 @@ gulp.task('css', function() {
 
 gulp.task('watch', function() {
     gulp.watch('js/main.js', ['scripts']);
-    gulp.watch('css/main.scss', ['css'])
+    gulp.watch('css/base.scss', ['css'])
     });
 
 gulp.task('delete', function() {
