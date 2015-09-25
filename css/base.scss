@@ -1,19 +1,6 @@
-/**
 
-    TODO:
-    - Have navigation into section that when moused over slide up to reveal hidden photo
-    - main background should be white
-    - decide on if only one page with links that scroll or multiple pages.
 
-**/
-
-/*
-Base color Hue: 90 deg; Can go to 30-150 deg.
-
-Hue:90
-Saturation:65
-Value/ligthness:50
- */
+@import 'media-query';
 
 html, body, nav, li, header,
 h1, h2, h3, h4, h5, ul, ol,
@@ -101,7 +88,7 @@ footer {
     text-align: center;
     height: 80%;
     width: 100%;
-    background: #888888 url("../images/main_background.jpg") no-repeat center;
+    background: #888888 url("../../images/main_background.jpg") no-repeat center;
     background-position: 0 -20em;
     color: #B38535;
     box-shadow: 0px 4.5em 30em #ddd inset;
@@ -169,38 +156,38 @@ p a:hover, p a:focus {
 }
 
 .service-calculator {
-    background: #999 url('../images/serviceCalculator.png') no-repeat center;
+    background: #999 url('../../images/serviceCalculator.png') no-repeat center;
 }
 
 .streaming-app {
-    background: #999 url('../images/twitchTV.png') no-repeat;
+    background: #999 url('../../images/twitchTV.png') no-repeat;
     background-position: -13em;
 
 
 }
 
 .pomodoro-timer {
-    background: #999999 url('../images/pomodoro-timer.png') no-repeat center;
+    background: #999999 url('../../images/pomodoro-timer.png') no-repeat center;
 }
 
 .fcc-news {
-    background: #999999 url('../images/fcc-news.png') no-repeat center;
+    background: #999999 url('../../images/fcc-news.png') no-repeat center;
 }
 
 .calculator {
-    background: #999999 url('../images/calculator.png') no-repeat center;
+    background: #999999 url('../../images/calculator.png') no-repeat center;
 }
 
 .photo-gallery {
-    background: #999999 url('../images/photo-gallery.png') no-repeat center;
+    background: #999999 url('../../images/photo-gallery.png') no-repeat center;
 }
 
 .weather-app {
-    background: #999999 url('../images/weather-app.png') no-repeat center;
+    background: #999999 url('../../images/weather-app.png') no-repeat center;
 }
 
 .random-quote {
-    background: #999999 url('../images/random-quote.png') no-repeat center;
+    background: #999999 url('../../images/random-quote.png') no-repeat center;
 }
 
 .project {
@@ -311,129 +298,3 @@ h3 {
     border-bottom: 1px solid #FFB319;
 }
 
-/**********             Media Querys            ************/
-
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2), (max-width: 699px) {
-    .main-header h1 {
-        font-size: 850%;
-    }
-
-    .main-header h2 {
-        font-size: 275%;
-    }
-
-    header, main {
-        width: 90%;
-    }
-
-    .slide {
-        margin-right: 2.7em;
-    }
-
-    nav li {
-        font-size: 2em;
-    }
-
-    p {
-        font-size: 1.8em;
-    }
-
-    .other-interest ul li {
-        font-size: 1.75em;
-    }
-
-    h2 {
-        font-size: 3em;
-    }
-
-    h3 {
-        font-size: 1.3em;
-    }
-
-    .skill a {
-        font-size: 1.5em;
-    }
-
-    .project {
-        height: 25em;
-        width: 100%;
-    }
-
-    .contact {
-        width: 70%;
-        font-size: .9em;
-    }
-}
-
-/* ----------- Tablets ----------- */
-/* Portrait and Landscape */
-@media screen
-  and (min-width: 700px)
-  and (max-width: 1020px) {
-    .main-header h1 {
-        font-size: 1000%;
-    }
-
-    .main-header h2 {
-        font-size: 325%;
-    }
-
-    header, main {
-        width: 70%;
-    }
-
-    .slide {
-        margin-right: 3em;
-    }
-
-    nav li {
-        font-size: 2em;
-    }
-
-    p {
-        font-size: 2.5em;
-    }
-
-    .other-interest ul li {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 3.2em;
-    }
-
-    h3 {
-        font-size: 1.5em;
-    }
-
-    .skill a {
-        font-size: 1.5em;
-    }
-
-    .project {
-        height: 25em;
-        width: 100%;
-    }
-
-    .contact {
-        width: 70%;
-        font-size: 1.2em;
-    }
-}
-
-/* ----------- Non-Retina Screens ----------- */
-@media screen
-  and (min-width: 1021px)
-  and (max-width: 1250px) {
-
-    header, main {
-        width: 70%;
-    }
-
-    .project {
-        width: 80%;
-    }
-}

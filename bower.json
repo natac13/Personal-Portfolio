@@ -1,0 +1,26 @@
+{
+  "name": "Portfolio",
+  "version": "0.1.0",
+  "homepage": "https://github.com/natac13/Personal-Portfolio",
+  "authors": [
+    "natac13 <sean.campbell13@gmail.com>"
+  ],
+  "main": "index.html",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4"
+  }
+}

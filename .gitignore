@@ -1,3 +1,5 @@
 Portfolio*.jpg
 Screenshot*.png
 images/
+node_modules/
+bower_components/

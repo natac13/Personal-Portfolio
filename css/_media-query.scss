@@ -1,0 +1,126 @@
+/**********             Media Querys            ************/
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2), (max-width: 699px) {
+    .main-header h1 {
+        font-size: 850%;
+    }
+
+    .main-header h2 {
+        font-size: 275%;
+    }
+
+    header, main {
+        width: 90%;
+    }
+
+    .slide {
+        margin-right: 2.7em;
+    }
+
+    nav li {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.8em;
+    }
+
+    .other-interest ul li {
+        font-size: 1.75em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    .skill a {
+        font-size: 1.5em;
+    }
+
+    .project {
+        height: 25em;
+        width: 100%;
+    }
+
+    .contact {
+        width: 70%;
+        font-size: .9em;
+    }
+}
+
+/* ----------- Tablets ----------- */
+/* Portrait and Landscape */
+@media screen
+  and (min-width: 700px)
+  and (max-width: 1020px) {
+    .main-header h1 {
+        font-size: 1000%;
+    }
+
+    .main-header h2 {
+        font-size: 325%;
+    }
+
+    header, main {
+        width: 70%;
+    }
+
+    .slide {
+        margin-right: 3em;
+    }
+
+    nav li {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 2.5em;
+    }
+
+    .other-interest ul li {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 3.2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .skill a {
+        font-size: 1.5em;
+    }
+
+    .project {
+        height: 25em;
+        width: 100%;
+    }
+
+    .contact {
+        width: 70%;
+        font-size: 1.2em;
+    }
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+  and (min-width: 1021px)
+  and (max-width: 1250px) {
+
+    header, main {
+        width: 70%;
+    }
+
+    .project {
+        width: 80%;
+    }
+}
