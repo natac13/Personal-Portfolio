@@ -9,7 +9,8 @@ import del        from 'del';
 import minifyCSS  from 'gulp-minify-css';
 import sourcemaps from 'gulp-sourcemaps';
 import eslint     from 'gulp-eslint';
-import plumber     from 'gulp-plumber';
+import plumber    from 'gulp-plumber';
+import prefixer   from 'gulp-autoprefixer';
 
 
 const lintOptions = {
@@ -17,8 +18,14 @@ const lintOptions = {
     useEslintrc: true
 };
 
+const paths = {
+    js: 'js/main.js',
+    basescss: 'css/base.scss',
+    allscss: 'css/*.scss'
+}
+
 gulp.task('scripts', function() {
-    gulp.src('js/main.js')
+    gulp.src(paths.js)
         .pipe(plumber())
         .pipe(eslint(lintOptions))
         .pipe(eslint.format())
@@ -36,9 +43,10 @@ gulp.task('scripts', function() {
     });
 
 gulp.task('css', function() {
-    gulp.src('css/base.scss')
+    gulp.src(paths.basescss)
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
+        .pipe(prefixer())
         .pipe(minifyCSS())
         .pipe(rename({
             basename: "style",
@@ -50,8 +58,8 @@ gulp.task('css', function() {
     });
 
 gulp.task('watch', function() {
-    gulp.watch('js/main.js', ['scripts']);
-    gulp.watch('css/*.scss', ['css'])
+    gulp.watch(paths.js, ['scripts']);
+    gulp.watch(paths.allscss, ['css'])
     });
 
 gulp.task('delete', function() {

@@ -1,13 +1,18 @@
 nav {
-    z-index: 10;
-    width: 100%;
-    padding-top: 3em;
-    background: linear-gradient(to bottom,$base-dark, $base-light);
+    // z-index: 10;
+    // width: 100%;
+    // padding-top: 3em;
+    // background: linear-gradient(to bottom,$base-dark, $base-light);
 
 }
-.navbar {
+
+
+.navbar-default {
+    background: linear-gradient(to bottom,$base-dark, $base-light);
     margin-bottom: 0;
 }
+
+// refactor so not so deep!!
 .navbar-default .navbar-nav {
     width: 100%;
     text-align: center;
