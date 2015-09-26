@@ -111,6 +111,7 @@ p a:hover, p a:focus {
     background: #999999 url('../../images/random-quote.png') no-repeat center;
 }
 
+
 .project {
     height: 30em;
     width: 60%;
@@ -126,6 +127,7 @@ p a:hover, p a:focus {
         -ms-transition: box-shadow 0.3s ease-in-out;
          -o-transition: box-shadow 0.3s ease-in-out;
             transition: box-shadow 0.3s ease-in-out;
+    transform: rotateY(40deg);
 }
 
 .project:hover, .project:focus {

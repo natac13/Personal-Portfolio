@@ -8,13 +8,27 @@ nav {
 .navbar {
     margin-bottom: 0;
 }
-.navbar-nav {
+.navbar-default .navbar-nav {
     width: 100%;
     text-align: center;
-    li {
-      float: none;
-      display: inline-block;
-      margin-right: 2em;
+    .nav-link {
+        float: none;
+        display: inline-block;
+        margin-right: 2em;
+        a {
+            text-decoration: none;
+            color: #7DB395;
+            font-style: normal;
+            -webkit-transition: color .6s linear, font-style .4s ease-in-out;
+               -moz-transition: color .6s linear, font-style .4s ease-in-out;
+                -ms-transition: color .6s linear, font-style .4s ease-in-out;
+                 -o-transition: color .6s linear, font-style .4s ease-in-out;
+                    transition: color .6s linear, font-style .4s ease-in-out;
+            &:hover {
+                color: #FFCD66;
+            }
+        }
+
     }
   }
 
@@ -34,17 +48,4 @@ nav ul {
     text-align: center;
 }
 
-nav a {
-    text-decoration: none;
-    color: #7DB395;
-    font-style: normal;
-    -webkit-transition: color .6s linear, font-style .4s ease-in-out;
-       -moz-transition: color .6s linear, font-style .4s ease-in-out;
-        -ms-transition: color .6s linear, font-style .4s ease-in-out;
-         -o-transition: color .6s linear, font-style .4s ease-in-out;
-            transition: color .6s linear, font-style .4s ease-in-out;
-}
 
-nav a:hover, nav a:focus {
-    color: #FFCD66;
-}

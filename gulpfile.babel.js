@@ -1,17 +1,18 @@
 'use strict'
 
-var gulp       = require('gulp'),
-    babel      = require('gulp-babel'),
-    uglify     = require('gulp-uglify'),
-    rename     = require('gulp-rename'),
-    sass       = require('gulp-sass'),
-    del        = require('del'),
-    minifyCSS  = require('gulp-minify-css'),
-    sourcemaps = require('gulp-sourcemaps'),
-    eslint     = require('gulp-eslint'),
-    plumber    = require('gulp-plumber');
+import gulp       from 'gulp';
+import babel      from 'gulp-babel';
+import uglify     from 'gulp-uglify';
+import rename     from 'gulp-rename';
+import sass       from 'gulp-sass';
+import del        from 'del';
+import minifyCSS  from 'gulp-minify-css';
+import sourcemaps from 'gulp-sourcemaps';
+import eslint     from 'gulp-eslint';
+import plumber     from 'gulp-plumber';
 
-var lintOptions = {
+
+const lintOptions = {
     rulePath: "./",
     useEslintrc: true
 };
