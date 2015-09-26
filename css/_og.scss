@@ -1,0 +1,232 @@
+html, body, nav, li, header,
+h1, h2, h3, h4, h5, ul, ol,
+p, a, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+
+html {
+    font-size: 16px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: $font-stack;
+}
+
+body {
+    background: $background;
+    font-size: 62.5%;
+    color: $comp;
+}
+
+header, main {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    margin-bottom: 1.3em;
+    width: 100%;
+}
+
+footer {
+    background: linear-gradient(to top, #080C03, #15210A, #202E12, #30451B, #3B591E);
+    color: #FFB319;
+    height: 25%;
+    position: relative;
+}
+
+
+
+h3 {
+    font-size: 2.3em;
+}
+
+
+p {
+    font-size: 250%;
+    line-height: 130%;
+    color: $comp;
+}
+
+a {
+    color: #55990F;
+}
+
+p a:hover, p a:focus {
+    color: #CCAE14;
+}
+
+.projects {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.service-calculator {
+    background: #999 url('../../images/serviceCalculator.png') no-repeat center;
+}
+
+.streaming-app {
+    background: #999 url('../../images/twitchTV.png') no-repeat;
+    background-position: -13em;
+
+
+}
+
+.pomodoro-timer {
+    background: #999999 url('../../images/pomodoro-timer.png') no-repeat center;
+}
+
+.fcc-news {
+    background: #999999 url('../../images/fcc-news.png') no-repeat center;
+}
+
+.calculator {
+    background: #999999 url('../../images/calculator.png') no-repeat center;
+}
+
+.photo-gallery {
+    background: #999999 url('../../images/photo-gallery.png') no-repeat center;
+}
+
+.weather-app {
+    background: #999999 url('../../images/weather-app.png') no-repeat center;
+}
+
+.random-quote {
+    background: #999999 url('../../images/random-quote.png') no-repeat center;
+}
+
+.project {
+    height: 30em;
+    width: 60%;
+    box-shadow:
+        -.5em .5em .7em #28332E,
+        .5em -.5em .7em #28332E,
+        .5em .5em .7em #28332E,
+        -.5em -.5em .7em #28332E;
+    border-radius: 1.5em;
+    margin: 1.5em auto;
+    -webkit-transition: box-shadow 0.3s ease-in-out;
+       -moz-transition: box-shadow 0.3s ease-in-out;
+        -ms-transition: box-shadow 0.3s ease-in-out;
+         -o-transition: box-shadow 0.3s ease-in-out;
+            transition: box-shadow 0.3s ease-in-out;
+}
+
+.project:hover, .project:focus {
+    box-shadow:
+        -.1em .1em .5em #28332E,
+        .1em -.1em .5em #28332E,
+        .1em .1em .5em #28332E,
+        -.1em -.1em .5em #28332E;
+
+}
+// for all headers need to change to class!
+// header {
+//     color: $base-color;
+//     font-weight: bold;
+//     border-bottom: 1px solid #0F1905;
+//     margin: 0 auto 1em auto;
+//     width: 100%;
+// }
+
+h2 {
+    font-size: 5em;
+}
+
+h3 {
+    color: #2D4C3C;
+    font-weight: bold;
+}
+
+.skills-of-focus {
+
+}
+
+.skill {
+    display: inline-block;
+    margin: 0.5em 1.25em;
+    box-sizing: border-box;
+    color: #000;
+}
+
+.skill a {
+    color: #000;
+    font-size: 2.5em;
+}
+
+.python {
+
+}
+.contact {
+    width: 40%;
+    position: relative;
+    top: 1em;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 2em;
+    height: auto;
+    text-align: center;
+}
+
+.social-link {
+    display: inline-block;
+    font-size: 4em;
+    margin-right: 0.5em;
+    -webkit-transition: font-size 0.2s linear;
+       -moz-transition: font-size 0.2s linear;
+        -ms-transition: font-size 0.2s linear;
+         -o-transition: font-size 0.2s linear;
+            transition: font-size 0.2s linear;
+}
+
+.social-link:hover, .social-link:focus {
+    font-size: 4.3em;
+}
+
+.social-links li.other-link a {
+    font-size: 2em;
+    color: #492C14 !important;
+    list-style: none;
+}
+
+.social-links li.other-link a:hover, .social-links li.other-link a:focus {
+    font-size: 2.1em;
+}
+
+
+
+.other-interest ul li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 .5em;
+    font-size: 2.25em;
+}
+
+
+.other-interest ul li a:hover, .other-interest ul li a:focus {
+    color: #CCAE14;
+}
+
+#contact header {
+    color: #FFB319;
+    width: 50%;
+    margin: 0 auto;
+    border-bottom: 1px solid #FFB319;
+}

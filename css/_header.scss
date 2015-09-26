@@ -1,0 +1,20 @@
+.jumbotron {
+    height: 100%;
+    width: 100%;
+    background: #888888 url("../../images/main_background.jpg") no-repeat center;
+    background-position: 0 -20em;
+    font-family: $header-font;
+    color: #B38535;
+    font-weight: normal;
+
+    h1 {
+        padding-top: 5%;
+        font-size: 1500%;
+    }
+
+    h2 {
+        font-size: 450%;
+        padding: 0;
+    }
+
+}

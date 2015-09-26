@@ -7,11 +7,21 @@ var gulp       = require('gulp'),
     sass       = require('gulp-sass'),
     del        = require('del'),
     minifyCSS  = require('gulp-minify-css'),
-    sourcemaps = require('gulp-sourcemaps');
+    sourcemaps = require('gulp-sourcemaps'),
+    eslint     = require('gulp-eslint'),
+    plumber    = require('gulp-plumber');
 
+var lintOptions = {
+    rulePath: "./",
+    useEslintrc: true
+};
 
 gulp.task('scripts', function() {
     gulp.src('js/main.js')
+        .pipe(plumber())
+        .pipe(eslint(lintOptions))
+        .pipe(eslint.format())
+        .pipe(eslint.failOnError())
         .pipe(sourcemaps.init())
         .pipe(babel())
         .pipe(uglify())
@@ -40,7 +50,7 @@ gulp.task('css', function() {
 
 gulp.task('watch', function() {
     gulp.watch('js/main.js', ['scripts']);
-    gulp.watch('css/base.scss', ['css'])
+    gulp.watch('css/*.scss', ['css'])
     });
 
 gulp.task('delete', function() {
