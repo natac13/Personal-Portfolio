@@ -1,17 +1,25 @@
-// font
-$font-stack: 'Roboto Condensed', sans-serif;;
+@import 'compass';
+// @import 'compass/reset';
+
+// fonts
+$font-stack: 'Roboto Condensed', sans-serif;
+$base-font-size: 16px;
+$base-line-height: 32px;
+@include establish-baseline;
+
 
 
 // colors
 $base-color: #2C4019;
-$base-dark: darken($base-color, 10%);
-$base-light: lighten($base-color, 10%);
-$background: lighten($base-color, 60%);
+$base-dark: scale_color($base-color, $lightness: -40%);
+$base-light: scale_color($base-color, $lightness: 30%);
+$background: lighten($base-color, 65%);
 
 $comp: #004E40;
-$light-comp: lighten($comp, 15%);
+$light-comp: scale_color($comp, $lightness: 25%);
 
 $header-color: #B38535;
+$header-dark: darken($header-color, 35%);
 
 $secondary-color: #087E8B;
 $backing-color: #0D1321;
