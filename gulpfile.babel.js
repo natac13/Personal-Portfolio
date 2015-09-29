@@ -36,8 +36,8 @@ const paths = {
 gulp.task('scripts', function() {
     gulp.src(paths.js)
         .pipe(cache('js'))
-        .pipe(plumber())
-        .pipe(eslint(lintOptions))
+        .pipe(plumber()) // prevents an error from stopping gulp
+        .pipe(eslint(lintOptions))  // next 3 are for eslint
         .pipe(eslint.format())
         .pipe(eslint.failOnError())
         .pipe(sourcemaps.init())
@@ -76,10 +76,15 @@ gulp.task('css', function() {
         .pipe(reload({stream: true}));
     });
 
+
+// start the local server which will update whenever I change any file imported
+// to the html file.
 gulp.task('serve', ['css'], function() {
 
     browserSync({
-        server: "./"
+        server: "./",
+        port: 8880
+
     });
 
     gulp.watch(paths.js, ['scripts']);
@@ -87,6 +92,9 @@ gulp.task('serve', ['css'], function() {
     gulp.watch(paths.html).on('change', reload);
 });
 
+
+// minify the images I once did this once since I am not completely sure of
+// cached remember of changed to use
 gulp.task('imgmin', () => {
     gulp.src(paths.imgs)
         .pipe(imagemin())

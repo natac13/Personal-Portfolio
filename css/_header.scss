@@ -33,14 +33,22 @@
         @include adjust-font-size-to(250px);
         transform: rotateY(40deg);
         text-shadow: 5px 3px 2px $header-dark;
+        animation-name: swing;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        // animation-delay: .2s;
+        animation-iteration-count: infinite;
         &:hover {
-            animation-name: swing;
-            animation-duration: 3s;
-            animation-timing-function: ease-in-out;
-            animation-delay: .2s;
-            animation-iteration-count: infinite;
+            // animation: none;
+            // transform: rotateY(0deg);
 
         }
+        @media only screen
+            and (min-device-width: 375px)
+            and (max-device-width: 667px)
+            and (-webkit-min-device-pixel-ratio: 2), (max-width: 699px) {
+                @include adjust-font-size-to(150px);
+          }
     }
 
     h2 {
