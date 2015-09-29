@@ -1,0 +1,11 @@
+#about {
+    @include adjust-font-size-to(30px);
+    @include trailing-border(5px,1, 30px, solid);
+
+}
+
+#bio {
+    @include adjust-font-size-to(40px);
+    @include leader(1, 40px);
+    @include trailer(1, 40px);
+}

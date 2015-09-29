@@ -29,10 +29,9 @@ html {
   display: inline-block;
   margin-right: 2em;
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 699px) {
+@media only screen and (max-width: 1100px) {
   .navbar-default .navbar-nav .nav-link {
     margin-right: 0;
-    display: inline;
   }
 }
 .navbar-default .navbar-nav .nav-link a {
@@ -84,7 +83,7 @@ html {
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 699px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 699px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 699px) {
   .jumbotron h1 {
     font-size: 9.375em;
     line-height: 1.06667em;
@@ -97,8 +96,31 @@ html {
   padding: 0;
   font-style: italic;
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 699px) {
+  .jumbotron h2 i {
+    font-size: 2.1875em;
+    line-height: 1.82857em;
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
 .jumbotron header {
   margin-top: 20em;
+}
+
+#about {
+  font-size: 1.875em;
+  line-height: 2.13333em;
+  border-bottom-width: 0.16667em;
+  border-bottom-style: solid;
+  padding-bottom: 0.9em;
+}
+
+#bio {
+  font-size: 2.5em;
+  line-height: 1.6em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
 }
 
 html, body, nav, li, header,
