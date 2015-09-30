@@ -34,6 +34,11 @@ html {
     margin-right: 0;
   }
 }
+@media only screen and (max-width: 845px) {
+  .navbar-default .navbar-nav .nav-link {
+    display: block;
+  }
+}
 .navbar-default .navbar-nav .nav-link a {
   text-decoration: none;
   color: #00ba99;
@@ -79,7 +84,7 @@ html {
   transform: rotateY(40deg);
   text-shadow: 5px 3px 2px #291f0c;
   animation-name: swing;
-  animation-duration: 3s;
+  animation-duration: 3.5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
@@ -96,7 +101,7 @@ html {
   padding: 0;
   font-style: italic;
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 699px) {
+@media only screen and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 750px) {
   .jumbotron h2 i {
     font-size: 2.1875em;
     line-height: 1.82857em;
@@ -109,11 +114,11 @@ html {
 }
 
 #about {
-  font-size: 1.875em;
-  line-height: 2.13333em;
-  border-bottom-width: 0.16667em;
+  font-size: 1.5625em;
+  line-height: 1.28em;
+  border-bottom-width: 0.2em;
   border-bottom-style: solid;
-  padding-bottom: 0.9em;
+  padding-bottom: 1.08em;
 }
 
 #bio {

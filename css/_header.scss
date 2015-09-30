@@ -34,7 +34,7 @@
         transform: rotateY(40deg);
         text-shadow: 5px 3px 2px $header-dark;
         animation-name: swing;
-        animation-duration: 3s;
+        animation-duration: 3.5s;
         animation-timing-function: ease-in-out;
         // animation-delay: .2s;
         animation-iteration-count: infinite;
@@ -58,9 +58,8 @@
         font-style: italic;
         i {
             @media only screen
-                and (min-device-width: 375px)
                 and (max-device-width: 667px)
-                and (-webkit-min-device-pixel-ratio: 2), (max-width: 699px) {
+                and (-webkit-min-device-pixel-ratio: 2), (max-width: 750px) {
                     @include adjust-font-size-to(35px);
                     display: inline-block;
                     margin: 0 auto;
