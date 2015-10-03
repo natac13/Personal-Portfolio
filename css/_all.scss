@@ -1,0 +1,13 @@
+a {
+    color: $base-light;
+    transition: .5s;
+    // &:focus &:hover {
+    //     text-decoration: none;
+
+    // }
+}
+a:hover, a:focus {
+    text-decoration: none;
+    color: $secondary-color;
+    background-color: scale-saturation($background, 95%);
+}

@@ -15,31 +15,31 @@
         transform: rotateY(32deg) rotateX(13deg);
         transition: all 0.4s ease-in-out;
         border-radius: 15px;
-        box-shadow: -100px 20px 3px rgba($backing-color, 0.6);
+        box-shadow: -100px 20px 3px rgba($backing-color, 0.5);
         &:hover {
             transform: rotateY(0deg);
-            box-shadow: -5px 3px 3px rgba($backing-color, 0.6);
+            box-shadow: -5px 3px 3px rgba($backing-color, 0.5);
         }
 
         @media only screen and (max-width: 699px) {
             left: 0;
             transform: rotateY(0deg);
-            box-shadow: -5px 3px 3px rgba($backing-color, 0.6);
+            box-shadow: -5px 3px 3px rgba($backing-color, 0.5);
         }
     }
 
     img.alt {
         transform: rotateY(-32deg) rotateX(13deg);
-        box-shadow: 100px 20px 3px rgba($backing-color, 0.6);
+        box-shadow: 100px 20px 3px rgba($backing-color, 0.5);
         &:hover {
             transform: rotateY(0deg);
-            box-shadow: 5px 3px 3px rgba($backing-color, 0.6);
+            box-shadow: 5px 3px 3px rgba($backing-color, 0.5);
         }
 
         @media only screen and (max-width: 699px) {
             left: 0;
             transform: rotateY(0deg);
-            box-shadow: 5px 3px 3px rgba($backing-color, 0.6);
+            box-shadow: 5px 3px 3px rgba($backing-color, 0.5);
         }
     }
 }
@@ -47,10 +47,15 @@
 .projects {
     p {
         @include adjust-font-size-to(35px);
+
+        code {
+            background: $backing-color;
+            color: $light-comp;
+        }
+
         .bold {
             font-weight: 700;
         }
-
         @media only screen and (max-width: 699px) {
             margin-top: 1em;
         }
