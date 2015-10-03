@@ -17,6 +17,7 @@ import remember    from 'gulp-remember';
 import concat      from 'gulp-concat';
 import compass     from 'gulp-compass';
 import browserSync from 'browser-sync';
+import changed     from 'gulp-changed';
 
 const reload      = browserSync.reload;
 const lintOptions = {
@@ -97,6 +98,7 @@ gulp.task('serve', ['css'], function() {
 // cached remember of changed to use
 gulp.task('imgmin', () => {
     gulp.src(paths.imgs)
+        .pipe(changed('img/'))
         .pipe(imagemin())
         .pipe(gulp.dest('img/'));
 });
@@ -116,4 +118,4 @@ gulp.task('delete', function() {
 
 // had to move the 'css' task before scripts so that when serve runs css has
 // completed and loads the stylesheet.
-gulp.task('default', ['delete', 'css', 'scripts', 'serve']);
+gulp.task('default', ['delete', 'css', 'scripts','imgmin', 'serve']);

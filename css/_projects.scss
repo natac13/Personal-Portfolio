@@ -1,0 +1,47 @@
+.project-wrapper {
+    perspective: 750px;
+
+    img {
+        position: relative;
+        left: 5em;
+        width: 70em;
+        height: 30em;
+        transform: rotateY(32deg) rotateX(13deg);
+        transition: all 0.4s ease-in-out;
+        border-radius: 15px;
+        box-shadow: -100px 20px 3px rgba($backing-color, 0.6);
+        &:hover {
+            transform: rotateY(0deg);
+            box-shadow: -5px 3px 3px rgba($backing-color, 0.6);
+        }
+
+        @media only screens and (max-width: 699px) {
+            left: 0;
+        }
+    }
+
+    img.alt {
+        transform: rotateY(-32deg) rotateX(13deg);
+        box-shadow: 100px 20px 3px rgba($backing-color, 0.6);
+        &:hover {
+            transform: rotateY(0deg);
+            box-shadow: 5px 3px 3px rgba($backing-color, 0.6);
+        }
+    }
+}
+
+.projects {
+    p {
+        @include adjust-font-size-to(35px);
+        .bold {
+            font-weight: 700;
+        }
+    }
+}
+
+.project-title {
+    @include adjust-font-size-to(23px);
+    @include leader(3, 20px);
+    //@include trailing-border(3px, 1, 20px, solid);
+    @include trailer(1, 20px);
+}
