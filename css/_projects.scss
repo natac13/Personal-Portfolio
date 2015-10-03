@@ -1,3 +1,9 @@
+@media only screen and (max-width: 699px) {
+    .project-wrapper {
+        float: left;
+    }
+}
+
 .project-wrapper {
     perspective: 750px;
 
@@ -15,8 +21,10 @@
             box-shadow: -5px 3px 3px rgba($backing-color, 0.6);
         }
 
-        @media only screens and (max-width: 699px) {
+        @media only screen and (max-width: 699px) {
             left: 0;
+            transform: rotateY(0deg);
+            box-shadow: -5px 3px 3px rgba($backing-color, 0.6);
         }
     }
 
@@ -24,6 +32,12 @@
         transform: rotateY(-32deg) rotateX(13deg);
         box-shadow: 100px 20px 3px rgba($backing-color, 0.6);
         &:hover {
+            transform: rotateY(0deg);
+            box-shadow: 5px 3px 3px rgba($backing-color, 0.6);
+        }
+
+        @media only screen and (max-width: 699px) {
+            left: 0;
             transform: rotateY(0deg);
             box-shadow: 5px 3px 3px rgba($backing-color, 0.6);
         }
@@ -35,6 +49,10 @@
         @include adjust-font-size-to(35px);
         .bold {
             font-weight: 700;
+        }
+
+        @media only screen and (max-width: 699px) {
+            margin-top: 1em;
         }
     }
 }
