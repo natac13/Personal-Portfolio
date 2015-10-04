@@ -294,19 +294,9 @@ a:hover, a:focus {
   font-style: italic;
 }
 .jumbotron h2 i {
-  font-size: 1.875em;
-  line-height: 2.13333em;
-}
-.jumbotron h2 i.fa-code {
-  color: brown;
-}
-@media only screen and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 750px) {
-  .jumbotron h2 i {
-    font-size: 1.875em;
-    line-height: 2.13333em;
-    display: inline-block;
-    margin: 0 auto;
-  }
+  font-size: 3.125em;
+  line-height: 1.28em;
+  text-shadow: 5px 3px 2px #291f0c;
 }
 .jumbotron header {
   margin-top: 20em;
@@ -327,11 +317,6 @@ a:hover, a:focus {
   margin-bottom: 0.8em;
 }
 
-@media only screen and (max-width: 699px) {
-  .project-wrapper {
-    float: left;
-  }
-}
 .project-wrapper {
   perspective: 750px;
 }
@@ -385,7 +370,9 @@ a:hover, a:focus {
 }
 @media only screen and (max-width: 699px) {
   .projects p {
-    margin-top: 1em;
+    font-size: 2.375em;
+    line-height: 1.68421em;
+    margin-top: 0.84211em;
   }
 }
 

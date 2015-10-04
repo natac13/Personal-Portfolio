@@ -34,8 +34,8 @@
             <ul class="nav navbar-nav">
               <li class="nav-link"><a href="#about">About</a></li>
               <li class="nav-link"><a href="#projects">Projects</a></li>
-              <li class="nav-link"><a href="#skills-of-focus">Skills</a></li>
-              <li class="nav-link"><a href="#other-interests">Interest</a></li>
+              <li class="nav-link"><a href="#skills">Skills</a></li>
+              <li class="nav-link"><a href="#life-interest">Life Interest</a></li>
               <li class="nav-link"><a href="#contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -47,9 +47,13 @@
         <h1 class="col-xs-12">Sean Campbell</h1>
         <h2><span class="hidden-xs">Electrical Apprentice Exploring a new Realm of Knowledge with Coding</span></h2>
         <h2>
-          <i class="fa fa-flash"></i>
-          <i class="fa fa-code"></i>
-          <i class="fa fa-flash"></i>
+          <div class="col-xs-5 col-xs-offset-1 visible-xs">
+            <i class="fa fa-flash"></i>
+          </div>
+          <div class="col-xs-5 col-xs-offset-1 visible-xs">
+            <i class="fa fa-code"></i>
+          </div>
+
         </h2>
       </header><!-- /header -->
     </div>
@@ -81,13 +85,13 @@ page to aid in the job finding process. </p>
 
 
 <!--##################           Projects             #######################-->
-      <section class="projects">
+      <section class="projects  ">
 
         <div class="row">
           <header class="project-title col-xs-12">
             <h3>Apartment Service Calculator CEC 2012</h3>
           </header><!-- /header -->
-          <div class="col-md-5 project-wrapper">
+          <div class="col-md-4 col-md-offset-1 project-wrapper">
             <a href="http://codepen.io/natac13/full/rONazM?editors=110"
           target="_blank"><img src="img/serviceCalculator.png"
               alt="Apartment Service Calculator" class="img-responsive">
@@ -102,14 +106,16 @@ page to aid in the job finding process. </p>
           <header class="project-title col-xs-12">
             <h3>Free Code Camp Latest News</h3>
           </header><!-- /header -->
-          <div class="col-md-5">
-            <p>The latest news stories posted to Free Code Camp by the campers. The Free Code Camp community is <span class="bold">extremely</span> passionate about sharing resources such as blog posts, free assets for a website, and other tutorials that help aid in the learning process. This app displays the news stories with all the relevant information from the FCC api. There are <span class="bold">4</span> <a href="https://angularjs.org/" target="_blank">AngularJS</a> filters that a user can user to display the list in different ways: (by date, author, how many likes). During this app I was able to get a understanding of testing <a href="https://angularjs.org/" target="_blank">AngularJS</a> controllers and filters with <a href="http://jasmine.github.io/">Jasmine</a> being run by <a href="https://github.com/karma-runner/karma-jasmine">Karma</a>. </p>
-          </div>
-          <div class="col-md-5 col-md-offset-1 project-wrapper">
+
+          <div class="col-md-4 col-md-offset-1 col-md-push-5 project-wrapper">
             <a href="http://codepen.io/natac13/full/ZbOWpV"
               target="_blank"><img src="img/fcc-news.png" alt="calculator app"
                 class="img-responsive alt">
             </a>
+          </div>
+
+          <div class="col-md-5 col-md-offset-1 col-md-pull-5">
+            <p>The latest news stories posted to Free Code Camp by the campers. The Free Code Camp community is <span class="bold">extremely</span> passionate about sharing resources such as blog posts, free assets for a website, and other tutorials that help aid in the learning process. This app displays the news stories with all the relevant information from the FCC api. There are <span class="bold">4</span> <a href="https://angularjs.org/" target="_blank">AngularJS</a> filters that a user can user to display the list in different ways: (by date, author, how many likes). During this app I was able to get a understanding of testing <a href="https://angularjs.org/" target="_blank">AngularJS</a> controllers and filters with <a href="http://jasmine.github.io/">Jasmine</a> being run by <a href="https://github.com/karma-runner/karma-jasmine">Karma</a>. </p>
           </div>
         </div>
 
@@ -117,7 +123,7 @@ page to aid in the job finding process. </p>
           <header class="project-title col-xs-12">
             <h3>TwitchTV Streaming App</h3>
           </header><!-- /header -->
-          <div class="col-md-5 project-wrapper">
+          <div class="col-md-4 col-md-offset-1 project-wrapper">
             <a href="http://codepen.io/natac13/full/OyMVpo"
               target="_blank"><img src="img/twitchTV.png" alt="twitchTv App"
               class="img-responsive">
@@ -132,15 +138,16 @@ page to aid in the job finding process. </p>
           <header class="project-title col-xs-12">
             <h3>Pomodoro Timer</h3>
           </header><!-- /header -->
-          <div class="col-md-5">
-            <p>My first app using <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>. The ability to have something handle the basic layout and setup of DOM elements really helped me get to writing the JavaScript code faster. The project explores the world of <code>setInerval()</code> and how one goes about dealing with pausing the interval and restarting it all together. During my time on the Free Code Camp Chat help rooms I find the biggest struggle campers have on this one is having the <code>setInerval()</code> id assigned to a variable that is scoped to a function. Leading to the inability of stopping the interval by calling <code>clearInerval()</code>. After reading through <a href="http://www.amazon.ca/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742" target="_blank"> Douglas Crockford's JavaScript The Good Parts</a> I realize I should have used a better way of handling the global variables. The plan could have been as simple as have one global object to contain the variables I want to access from anywhere.</p>
-          </div>
-          <div class="col-md-5 col-md-offset-1 project-wrapper">
+          <div class="col-md-4 col-md-offset-1 col-md-push-5 project-wrapper">
           <a href="http://codepen.io/natac13/full/VvZewQ?editors=100"
             target="_blank"><img src="img/pomodoro-timer.png"
             alt="Pomodoro Timer" class="img-responsive alt">
           </a>
           </div>
+          <div class="col-md-5 col-md-offset-1 col-md-pull-5">
+            <p>My first app using <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>. The ability to have something handle the basic layout and setup of DOM elements really helped me get to writing the JavaScript code faster. The project explores the world of <code>setInerval()</code> and how one goes about dealing with pausing the interval and restarting it all together. During my time on the Free Code Camp Chat help rooms I find the biggest struggle campers have on this one is having the <code>setInerval()</code> id assigned to a variable that is scoped to a function. Leading to the inability of stopping the interval by calling <code>clearInerval()</code>. After reading through <a href="http://www.amazon.ca/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742" target="_blank"> Douglas Crockford's JavaScript The Good Parts</a> I realize I should have used a better way of handling the global variables. The plan could have been as simple as have one global object to contain the variables I want to access from anywhere.</p>
+          </div>
+
         </div>
 
 
@@ -148,7 +155,7 @@ page to aid in the job finding process. </p>
           <header class="project-title col-xs-12">
             <h3>Local Weather App</h3>
           </header><!-- /header -->
-          <div class="col-md-5 project-wrapper">
+          <div class="col-md-4 col-md-offset-1 project-wrapper">
             <a href="http://codepen.io/natac13/full/qdvyMg/" target="_blank">
               <img src="img/weather-app.png" alt="Weather App"
                 class="img-responsive">
@@ -163,15 +170,16 @@ page to aid in the job finding process. </p>
           <header class="project-title col-xs-12">
             <h3>Calculator</h3>
           </header><!-- /header -->
-          <div class="col-md-5">
-            <p>Idea for this Calculator came from a friend of mine who wanted a more personal touch when he needed to use a calculator. After finding out the color scheme and the basic layout that he wanted I came back to him with this app for him. The down side to this app so far is the inability to work with more than 2 numbers before hitting equals button. This is a error from myself that I plan to fix in the future</p>
-          </div>
-          <div class="col-md-5 col-md-offset-1 project-wrapper">
+          <div class="col-md-4 col-md-offset-1 col-md-push-5 project-wrapper">
             <a href="http://codepen.io/natac13/full/xwwWve"
               target="_blank"><img src="img/calculator.png" alt="calculator app"
                 class="img-responsive alt">
             </a>
           </div>
+          <div class="col-md-5 col-md-offset-1 col-md-pull-5">
+            <p>Idea for this Calculator came from a friend of mine who wanted a more personal touch when he needed to use a calculator. After finding out the color scheme and the basic layout that he wanted I came back to him with this app for him. The down side to this app so far is the inability to work with more than 2 numbers before hitting equals button. This is a error from myself that I plan to fix in the future</p>
+          </div>
+
         </div>
 
 
@@ -179,7 +187,7 @@ page to aid in the job finding process. </p>
           <header class="project-title col-xs-12">
             <h3>Random Quote Machine</h3>
           </header><!-- /header -->
-          <div class="col-md-5 project-wrapper">
+          <div class="col-md-4 col-md-offset-1 project-wrapper">
           <a href="http://codepen.io/natac13/full/vOPpjg" target="_blank">
             <img src="img/random-quote.png" alt="Random Quote Machine"
               class="img-responsive">
@@ -194,24 +202,28 @@ page to aid in the job finding process. </p>
           <header class="project-title col-xs-12">
             <h3>PHP Photo gallery</h3>
           </header><!-- /header -->
-          <div class="col-md-5">
+          <div class="col-md-4 col-md-offset-1 col-md-push-5 project-wrapper">
+            <a href="https://github.com/natac13/PHP-Advanced-OOP-project-MySQL/
+tree/master"
+              target="_blank"><img src="img/photo-gallery.png"
+              alt="PHP photo gallery" class="img-responsive alt">
+            </a>
+          </div>
+          <div class="col-md-5 col-md-offset-1 col-md-pull-5">
             <p>This PHP photo gallery project I completed before I knew about hosting and having my own web page. The tutorial I followed was by Kevin Skoglund called <a href="http://www.lynda.com/PHP-tutorials/php-with-OOP-beyond-the-basics/653-2.html"> PHP Beyond the Basic</a>. This tutorial really accelerated my knowledge when it came to object oriented programming. I gained the understanding of classes and how they work as blueprints. There can be public method and private method; to blow my mind further the static methods came into the mix!</p>
           </div>
-          <div class="col-md-5 col-md-offset-1 project-wrapper">
-          <a href="https://github.com/natac13/PHP-Advanced-OOP-project-MySQL/
-tree/master"
-            target="_blank"><img src="img/photo-gallery.png"
-            alt="PHP photo gallery" class="img-responsive alt">
-          </a>
-          </div>
+
         </div>
 
       </section><!-- end projects -->
 
-      <section class="skills-of-focus">
-        <header id="skills-of-focus">
-          <h2>Skills Where I Focus Attention</h2>
-        </header><!-- /skills-of-focus -->
+      <section class="container">
+        <header  id="skills" class="col-md-10 col-md-offset-1 subheading">
+          <h2>Skills</h2>
+        </header><!-- /header -->
+      </section>
+
+
 
         <ul class="skills">
           <li class="skill javascript">
@@ -250,7 +262,11 @@ tree/master"
             <a href="http://php.net/" target="_blank" title="PHP">PHP</a>
           </li>
         </ul>
-      </section>
+        <section class="container">
+          <header  id="life-interest" class="col-md-10 col-md-offset-1 subheading">
+            <h2>Life Interest</h2>
+          </header><!-- /header -->
+        </section>
       <section class="other-interest">
         <header id="other-interests">
           <h2>Other Interest</h2>

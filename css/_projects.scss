@@ -1,6 +1,6 @@
 @media only screen and (max-width: 699px) {
     .project-wrapper {
-        float: left;
+        //@include trailer(1, 35px);
     }
 }
 
@@ -57,7 +57,8 @@
             font-weight: 700;
         }
         @media only screen and (max-width: 699px) {
-            margin-top: 1em;
+            @include adjust-font-size-to(38px);
+            @include leader(1, 38px);
         }
     }
 }
