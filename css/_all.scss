@@ -1,6 +1,7 @@
 a {
     color: $base-light;
     transition: .5s;
+    border-radius: 5px;
     // &:focus &:hover {
     //     text-decoration: none;
 
@@ -8,6 +9,18 @@ a {
 }
 a:hover, a:focus {
     text-decoration: none;
-    color: $secondary-color;
-    background-color: scale-saturation($background, 95%);
+    color: scale-lightness($secondary-color, 10%);
+    background-color: scale-saturation($background, 99%);
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: $font-stack;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: $font-stack;
 }

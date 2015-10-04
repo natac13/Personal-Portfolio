@@ -1,7 +1,7 @@
 
 #bio {
-    @include adjust-font-size-to(40px);
-    @include leader(1, 40px);
-    @include trailer(1, 40px);
+    @include adjust-font-size-to(30px);
+    @include leader(1, 30px);
+    @include trailer(1, 30px);
 
 }

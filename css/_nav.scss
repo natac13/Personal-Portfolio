@@ -3,7 +3,7 @@
     transition: background-color 2s ease 0s;
     margin-bottom: 0;
     border: 0;
-    height: 5em;
+    height: 4em;
 }
 
 .navbar-fixed-top.opaque {
@@ -26,7 +26,7 @@
         }
     }
     .nav-link {
-        @include adjust-font-size-to(50px);
+        @include adjust-font-size-to(35px);
         float: none;
         display: inline-block;
         margin-right: 2em;

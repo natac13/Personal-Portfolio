@@ -1,0 +1,36 @@
+footer {
+    background: linear-gradient(to top, #080C03, #15210A, #202E12, #30451B);
+    color: $header-color;
+    h2 {
+        @include adjust-font-size-to(70px);
+        @include trailing-border(5px, 0.5, 70px, solid);
+        margin: 0 auto;
+        border-color: rgba($header-color, 0.5);
+        width: 50%;
+    }
+
+    a {
+        @include adjust-font-size-to(40px);
+        color: $header-color;
+    }
+
+}
+
+#contact {
+    button[name='email'] {
+        @include adjust-font-size-to(35px);
+        color: $secondary-color;
+        background: transparent;
+        border: 0;
+        &:hover {
+            background: rgba($backing-color, 0.6);
+            color: $light-comp;
+        }
+    }
+
+    ul {
+        li.other-link {
+            display: block;
+        }
+    }
+}

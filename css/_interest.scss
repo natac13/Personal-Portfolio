@@ -1,0 +1,11 @@
+#life-interest {
+    p {
+        @include adjust-font-size-to(35px);
+        color: $secondary-color;
+        font-weight: 700;
+        border-radius: 20em;
+        background: rgba($backing-color, 0.3);
+    }
+
+
+}

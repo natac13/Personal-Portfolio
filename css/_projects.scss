@@ -10,7 +10,7 @@
     img {
         position: relative;
         left: 5em;
-        width: 70em;
+        width: 80em;
         height: 30em;
         transform: rotateY(32deg) rotateX(13deg);
         transition: all 0.4s ease-in-out;
@@ -46,7 +46,7 @@
 
 .projects {
     p {
-        @include adjust-font-size-to(35px);
+        @include adjust-font-size-to(28px);
 
         code {
             background: $backing-color;
@@ -57,15 +57,19 @@
             font-weight: 700;
         }
         @media only screen and (max-width: 699px) {
-            @include adjust-font-size-to(38px);
-            @include leader(1, 38px);
+            @include adjust-font-size-to(30px);
+            @include leader(1, 30px);
         }
     }
 }
 
 .project-title {
-    @include adjust-font-size-to(23px);
-    @include leader(3, 20px);
-    //@include trailing-border(3px, 1, 20px, solid);
-    @include trailer(1, 20px);
+    h3 {
+        @include adjust-font-size-to(35px);
+        @include leader(1, 35px);
+        //@include trailing-border(3px, 1, 20px, solid);
+        @include trailer(1, 35px);
+        color: $comp;
+        font-weight: 700;
+    }
 }

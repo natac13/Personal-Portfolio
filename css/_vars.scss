@@ -1,10 +1,10 @@
 @import 'compass';
-// @import 'compass/reset';
+//@import 'compass/reset';
 
 // fonts
 $font-stack: 'Roboto Condensed', sans-serif;
 $base-font-size: 16px;
-$base-line-height: 32px;
+$base-line-height: 28px;
 @include establish-baseline;
 
 
@@ -23,3 +23,4 @@ $header-dark: darken($header-color, 35%);
 
 $secondary-color: #087E8B;
 $backing-color: #0D1321;
+

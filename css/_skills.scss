@@ -1,0 +1,13 @@
+#skills {
+    h3 {
+        @include adjust-font-size-to(23px);
+        @include leader(0.25, 23px);
+        font-style: italic;
+        color: $comp;
+    }
+
+    div {
+        @include adjust-font-size-to(25px);
+    }
+
+}
