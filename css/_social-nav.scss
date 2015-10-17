@@ -1,0 +1,36 @@
+#social-nav {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -1em;
+
+
+    @media only screen and (max-width: 899px) {
+        top: -6em;
+    }
+
+    .row {
+        margin: 0.5em 0;
+    }
+
+
+    .socials {
+        @include adjust-font-size-to(30px);
+        margin: 0;
+        padding: 0 0.5em;
+        background: rgba($header-color, 0.3);
+        color: #bbb;
+        transition: color 0.5s ease-in,
+                    background 0.5s ease-in;
+
+        @media only screen and (max-width: 699px) {
+            @include adjust-font-size-to(30px);
+            padding: 0.25em 0.5em;
+            margin: 0 0.5em;
+        }
+    }
+    .socials:hover {
+        color: $backing-color;
+        background: rgba($header-color, 0.8);
+    }
+}

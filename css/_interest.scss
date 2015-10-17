@@ -5,6 +5,10 @@
         font-weight: 700;
         border-radius: 20em;
         background: rgba($backing-color, 0.3);
+
+        @media only screen and (max-width: 699px) {
+            @include adjust-font-size-to(32px);
+        }
     }
 
 

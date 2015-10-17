@@ -21,7 +21,15 @@
             box-shadow: -5px 3px 3px rgba($backing-color, 0.5);
         }
 
+        @media only screen and (max-width: 899px) {
+            width: 50em;
+            height: 25em;
+            transform: rotateY(32deg) rotateX(6deg);
+        }
+
         @media only screen and (max-width: 699px) {
+            width: 50em;
+            height: 25em;
             left: 0;
             transform: rotateY(0deg);
             box-shadow: -5px 3px 3px rgba($backing-color, 0.5);
@@ -36,7 +44,15 @@
             box-shadow: 5px 3px 3px rgba($backing-color, 0.5);
         }
 
+        @media only screen and (max-width: 899px) {
+            width: 50em;
+            height: 25em;
+            transform: rotateY(-32deg) rotateX(6deg);
+        }
+
         @media only screen and (max-width: 699px) {
+            width: 50em;
+            height: 25em;
             left: 0;
             transform: rotateY(0deg);
             box-shadow: 5px 3px 3px rgba($backing-color, 0.5);
@@ -56,9 +72,15 @@
         .bold {
             font-weight: 700;
         }
+
+        @media only screen and (max-width: 899px) {
+            @include adjust-font-size-to(22px);
+            @include leader(0.5, 22px);
+        }
+
         @media only screen and (max-width: 699px) {
-            @include adjust-font-size-to(30px);
-            @include leader(1, 30px);
+            @include adjust-font-size-to(23px);
+            @include leader(0.5, 23px);
         }
     }
 }

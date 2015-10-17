@@ -7,6 +7,10 @@ footer {
         margin: 0 auto;
         border-color: rgba($header-color, 0.5);
         width: 50%;
+
+        @media only screen and (max-width: 699px) {
+            @include adjust-font-size-to(40px);
+        }
     }
 
     a {
@@ -18,6 +22,17 @@ footer {
 
 #contact {
     button[name='email'] {
+        @include adjust-font-size-to(35px);
+        color: $secondary-color;
+        background: transparent;
+        border: 0;
+        &:hover {
+            background: rgba($backing-color, 0.6);
+            color: $light-comp;
+        }
+    }
+
+    a[title^='Send me'] {
         @include adjust-font-size-to(35px);
         color: $secondary-color;
         background: transparent;

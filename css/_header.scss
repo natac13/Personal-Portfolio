@@ -26,7 +26,14 @@
 
     header {
         position: relative;
-        top: 0.5em;
+        top: -3.5em;
+
+        @media only screen and (max-width: 899px) {
+            top: -8.5em;
+        }
+        @media only screen and (max-width: 699px) {
+            top: -6.5em;
+        }
     }
 
     h1 {
@@ -46,27 +53,30 @@
         @media only screen
             and (min-device-width: 375px)
             and (max-device-width: 800px)
-            and (-webkit-min-device-pixel-ratio: 2), (max-width: 800px) {
+            and (-webkit-min-device-pixel-ratio: 2), (max-width: 899px) {
                 @include adjust-font-size-to(85px);
           }
     }
 
     h2 {
         @include adjust-font-size-to(35px);
-        @include leader(1, 60px);
+        @include leader(1, 35px);
         padding: 0;
         font-style: italic;
         text-shadow: 5px 3px 2px $header-dark;
+
+        @media only screen
+                and (max-device-width: 667px)
+                and (-webkit-min-device-pixel-ratio: 2), (max-width: 899px) {
+                    @include adjust-font-size-to(35px);
+
+              }
         i {
             @include adjust-font-size-to(45px);
             margin-top: 1em;
             text-shadow: 5px 3px 2px $header-dark;
 
-            @media only screen
-                and (max-device-width: 667px)
-                and (-webkit-min-device-pixel-ratio: 2), (max-width: 750px) {
 
-              }
         }
         // perspective: 1000px;
         // .fa-flash {
