@@ -42,7 +42,7 @@ function died($error) {
 
         'X-Mailer: PHP/' . phpversion();
 
-        @mail($email_to, $subject, $message, $headers);
+        mail($email_to, $subject, $message, $headers);
     } else {
         died("Form not correct");
     }

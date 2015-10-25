@@ -312,6 +312,16 @@ html, body {
   color: #004E40;
   font-weight: 700;
 }
+.project-title h3 .git-link {
+  padding: 0.2em;
+  background: rgba(13, 19, 33, 0.8);
+  border-radius: 0.1em;
+  box-shadow: 0 1px 25px #333;
+  transition: all 0.6s ease-out;
+}
+.project-title h3 .git-link:hover {
+  box-shadow: 0 0 5px #555;
+}
 
 #skills h3 {
   font-size: 1.4375em;

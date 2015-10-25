@@ -110,11 +110,34 @@ page to aid in the job finding process. </p>
 
 
 <!--##################           Projects             #######################-->
-      <section class="projects  ">
+      <section class="projects">
 
         <div class="row">
           <header class="project-title col-xs-12">
-            <h3>Apartment Service Calculator CEC 2012</h3>
+            <h3>Simon Game -> <a href="http://github.com/natac13/simon-game"
+              class="git-link" target="_blank">
+              Code On GitHub
+            </a></h3>
+          </header><!-- /header -->
+
+          <div class="col-sm-4 col-sm-offset-1 col-sm-push-5 project-wrapper">
+            <a href="https://damp-shore-6239.herokuapp.com/"
+              target="_blank"><img src="img/simon_game.png" alt="Simon Game"
+                class="img-responsive alt">
+            </a>
+          </div>
+
+          <div class="col-sm-5 col-sm-offset-1 col-sm-pull-5">
+            <p>My Simon Game project. For this project I used the module pattern with ES6 <code>import</code> to separate the JavaScript files which really helped me when it came to testing with <a href="http://jasmine.github.io/">Jasmine</a>. Learning that I can write my test files in ES6 and not have to transpile to ES5. The trouble with this project came when I was thinking of how to 'listen' for the users click and then test that to the played sequence. At first I thought of using a <code>setTimeout()</code> but could not think of where to go from there. It came to me to just run a <code>test()</code> function after the user clicks a panel and compare the two arrays. If they differ then there is a fail. On the other hand if they are the same length and match then advance to next level.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <header class="project-title col-xs-12">
+            <h3>Apartment Service Calculator CEC 2012 ->
+<a href="https://github.com/natac13/Appartment-Service-Calculator-JS"
+  class="git-link" target="_blank">Code On GitHub</a>
+            </h3>
           </header><!-- /header -->
           <div class="col-sm-4 col-sm-offset-1 project-wrapper">
             <a href="http://codepen.io/natac13/full/rONazM?editors=110"
@@ -129,7 +152,10 @@ page to aid in the job finding process. </p>
 
         <div class="row">
           <header class="project-title col-xs-12">
-            <h3>Free Code Camp Latest News</h3>
+            <h3>Free Code Camp Latest News ->
+<a href="https://github.com/natac13/FCC-news-feed" class="git-link"
+target="_blank">Code On GitHub</a>
+            </h3>
           </header><!-- /header -->
 
           <div class="col-sm-4 col-sm-offset-1 col-sm-push-5 project-wrapper">
@@ -146,7 +172,10 @@ page to aid in the job finding process. </p>
 
         <div class="row">
           <header class="project-title col-xs-12">
-            <h3>TwitchTV Streaming App</h3>
+            <h3>TwitchTV Streaming App ->
+<a href="https://github.com/natac13/twitch-tv-app-fcc" class="git-link"
+target="_blank">Code On GitHub</a>
+            </h3>
           </header><!-- /header -->
           <div class="col-sm-4 col-sm-offset-1 project-wrapper">
             <a href="http://codepen.io/natac13/full/OyMVpo"
@@ -161,7 +190,10 @@ page to aid in the job finding process. </p>
 
         <div class="row">
           <header class="project-title col-xs-12">
-            <h3>Pomodoro Timer</h3>
+            <h3>Pomodoro Timer -> <a href="https://github.com/natac13/Pomodoro-Timer"
+              class="git-link" target="_blank">
+              Code On GitHub
+            </a></h3>
           </header><!-- /header -->
           <div class="col-sm-4 col-sm-offset-1 col-sm-push-5 project-wrapper">
           <a href="http://codepen.io/natac13/full/VvZewQ?editors=100"
@@ -178,7 +210,10 @@ page to aid in the job finding process. </p>
 
         <div class="row">
           <header class="project-title col-xs-12">
-            <h3>Local Weather App</h3>
+            <h3>Local Weather App -> <a href="https://gist.github.com/natac13/628e1f2774d332c5d750"
+              class="git-link" target="_blank">
+              Code On GitHub
+            </a></h3>
           </header><!-- /header -->
           <div class="col-sm-4 col-sm-offset-1 project-wrapper">
             <a href="http://codepen.io/natac13/full/qdvyMg/" target="_blank">
@@ -193,7 +228,10 @@ page to aid in the job finding process. </p>
 
         <div class="row">
           <header class="project-title col-xs-12">
-            <h3>Calculator</h3>
+            <h3>Calculator -> <a href="https://github.com/natac13/calculator-viner"
+              class="git-link" target="_blank">
+              Code On GitHub
+            </a></h3>
           </header><!-- /header -->
           <div class="col-sm-4 col-sm-offset-1 col-sm-push-5 project-wrapper">
             <a href="http://codepen.io/natac13/full/xwwWve"
@@ -225,7 +263,10 @@ page to aid in the job finding process. </p>
 
         <div class="row">
           <header class="project-title col-xs-12">
-            <h3>PHP Photo gallery</h3>
+            <h3>PHP Photo gallery -> <a href="https://github.com/natac13/PHP-Advanced-OOP-project-MySQL"
+              class="git-link" target="_blank">
+              Code On GitHub
+            </a></h3>
           </header><!-- /header -->
           <div class="col-sm-4 col-sm-offset-1 col-sm-push-5 project-wrapper">
             <a href="https://github.com/natac13/PHP-Advanced-OOP-project-MySQL/
@@ -354,12 +395,12 @@ tree/master"
       </header><!-- /contact -->
       <div class="contact">
         <!-- <a href="#" name="email" title="email me!!">sean.campbell13@gmail</a> -->
-        <!-- <button type="button" class="btn btn-default btn-lg" data-toggle="modal"
+      <!--   <button type="button" class="btn btn-default btn-lg" data-toggle="modal"
           data-target="#myModal" name="email" title="Send me an email!">
             sean.campbell13@gmail
           </button> -->
-          <a href="mailto:seancampbell13@gmail.com?Subject=Interested!"
-            target="_top" title="Send me an email!" class="btn btn-default btn-lg">sean.campbell13@gmail</a>
+           <a href="mailto:seancampbell13@gmail.com?Subject=Interested!"
+            tar get="_top" title="Send me an email!" class="btn btn-default btn-lg">sean.campbell13@gmail</a>
 
 
         <!-- <div class="modal fade" id="myModal" role="contact" tabindex="-1">
