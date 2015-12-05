@@ -3,5 +3,4 @@ Screenshot*.png
 images/
 node_modules/
 bower_components/
-img/
 .sass-cache/
