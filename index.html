@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
 
     <!-- Main style sheet -->
     <link rel="stylesheet" type="text/css" href="css/dist/style.min.css">
@@ -32,11 +32,11 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="nav-link"><a href="#about">About</a></li>
-              <li class="nav-link"><a href="#projects">Projects</a></li>
-              <li class="nav-link"><a href="#skills">Skills</a></li>
-              <li class="nav-link"><a href="#life-interest">Life Interest</a></li>
-              <li class="nav-link"><a href="#contact">Contact</a></li>
+              <li class="nav-link"><a href="#about" class="scroll">About</a></li>
+              <li class="nav-link"><a href="#projects" class="scroll">Projects</a></li>
+              <li class="nav-link"><a href="#skills" class="scroll">Skills</a></li>
+              <li class="nav-link"><a href="#life-interest" class="scroll">Life Interest</a></li>
+              <li class="nav-link"><a href="#contact" class="scroll">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -84,21 +84,46 @@
 
 
     <main class="container-fluid text-center">
-      <section class="container">
+      <section class="container"id="bio">
         <header id="about" class="col-md-12 subheading">
           <h2>About Me</h2>
         </header><!-- /header -->
-        <p id="bio" class="col-md-10 col-md-offset-1">
-I am currently an electrical apprentice in my 3rd year. During my free time I
-have been teaching myself the wonders of programming! I have discovered a vast
-array of tutorial which have aided in my development. The 2 main resources
-where I have focused my attention: <a href="http://www.freecodecamp.com/"
-target="_blank">Free Code Camp</a>, <a href="https://www.codeschool.com/paths"
-target="_blank">Code School</a>. Making sure to read tons of books and some
-explore workshop modules from <a href="http://nodeschool.io/" target="_blank">
-Node School</a>. I have been on this amazing journey since the winter of 2014
-and now feel I have advanced my knowledge to the point of making this portfolio
-page to aid in the job finding process. </p>
+        <p class="col-md-10 col-md-offset-1 intro">
+As a self taught JavaScript application developer, I am currently searching for
+a challenging workplace environment that will demand my engagement and push my level
+of knowledge to the edge. I obtained my current skills in web development through
+my natural drive and ambition for livelong erudition. I focused each moment of free
+time away from my electrical construction job to immerse myself with tutorials,
+documentation, blogs and podcast.</p>
+        <div class="col-md-12 education-info">
+          <a href="#education-info" data-toggle="collapse">Where I got my Knowledge</a>
+          <div class="collapse" id="education-info">
+            <p>
+              Finding <a href="https://freecodecamp.com">Free Code Camp</a> and working
+              through the coursework, which is about <a href="https://medium.freecodecamp.com/learn-to-code-by-coding-d1e241de81c0#.v74xfsicx">learning to code by coding</a>, gave me direction and incremental challenges and 'waypoints' to build understanding from the ground up. Two other sites that have helped me - <a href="https://www.codeschool.com/paths">Code School</a> and <a href="https://egghead.io/">Egghead.io</a>. To obtain the front-end developer certificate from Free Code Camp you are required to complete 10 front-end projects base solely off Agile user stories and a demo project. The idea is to reverse engineer the application. I am at 9 projects completed and when I finish up the last this sentence will get changed. The certificate will also be added to show my completion.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-12 personal-info">
+          <a href="#more-about" data-toggle="collapse">Me Personally</a>
+          <div class="collapse" id="more-about">
+            <p>
+              I have moved to a Vegan lifestyle that has been incredibly liberating. Through my decision numerous lives are being saved. Plus, I have shed 50lbs of extra weight which has inspired my mother, at 64 years of age, to continually drop 1-2 lbs every week after becoming vegan herself. She is well over a 50lbs lost at this point.
+            </p>
+            <p>
+              My goal in life is to hover near the Abyss knowledge. To find out better ways of doing activities in which we as a society have been <em>attempting</em> for years. To take a <strong>different</strong> vantage points, and unique perspectives. To Explore new paths which can label you as a freak, but I would rather be a freak than insane!
+            </p>
+            <div class="well">
+              <blockquote class="quote">
+                <p>Insanity: doing the same thing over and over again and expecting different results.</p>
+                <footer>Albert Einstein</footer>
+              </blockquote>
+            </div>
+
+
+          </div>
+        </div>
       </section>
 
 
@@ -111,6 +136,23 @@ page to aid in the job finding process. </p>
 
 <!--##################           Projects             #######################-->
       <section class="projects">
+        <div class="row">
+          <header class="project-title col-xs-12">
+            <h3>Wikipedia Mock Search ->
+                <a href="https://github.com/natac13/WikiSearch"
+                class="git-link" target="_blank">Code On GitHub</a>
+            </h3>
+          </header><!-- /header -->
+          <div class="col-sm-4 col-sm-offset-1 project-wrapper">
+            <a href="https://evening-springs-5783.herokuapp.com/?#/?_k=1w49xv"
+          target="_blank"><img src="img/wikiSearch.png"
+              alt="Wikipedia Seach" class="img-responsive">
+            </a>
+          </div>
+          <div class="col-sm-5 col-sm-offset-1">
+            <p>This application is using Wikipedia's api system to do a search through their records. This was my first crack at a <a href="https://facebook.github.io/react/">React.js</a> application. I was able to simplify my build process by learning <a href="https://webpack.github.io/">Webpack</a>; which handled ES6 transpiling, as well as the JSX transformation. This app is running off a node back-end which allows me to run it on heroku. After getting introduce to Webpack through this project I have now adapted it to run my build process. The config file is different from the streams and <code>.pipe()</code> commands of <a href="http://gulpjs.com/">gulp</a> but it a way that has me focused on writing code and not setting up the environment.</p>
+          </div>
+        </div>
 
         <div class="row">
           <header class="project-title col-xs-12">
@@ -119,14 +161,12 @@ page to aid in the job finding process. </p>
               Code On GitHub
             </a></h3>
           </header><!-- /header -->
-
           <div class="col-sm-4 col-sm-offset-1 col-sm-push-5 project-wrapper">
             <a href="https://damp-shore-6239.herokuapp.com/"
               target="_blank"><img src="img/simon_game.png" alt="Simon Game"
                 class="img-responsive alt">
             </a>
           </div>
-
           <div class="col-sm-5 col-sm-offset-1 col-sm-pull-5">
             <p>My Simon Game project. For this project I used the module pattern with ES6 <code>import</code> to separate the JavaScript files which really helped me when it came to testing with <a href="http://jasmine.github.io/">Jasmine</a>. Learning that I can write my test files in ES6 and not have to transpile to ES5. The trouble with this project came when I was thinking of how to 'listen' for the users click and then test that to the played sequence. At first I thought of using a <code>setTimeout()</code> but could not think of where to go from there. It came to me to just run a <code>test()</code> function after the user clicks a panel and compare the two arrays. If they differ then there is a fail. On the other hand if they are the same length and match then advance to next level.</p>
           </div>
@@ -292,31 +332,52 @@ tree/master"
           <h3 class="col-xs-12">Javascript Path</h3>
           <div class="col-xs-6 col-md-2">
             <a href="https://en.wikipedia.org/wiki/JavaScript"
-              target="_blank" title="JavaScript">JavaScript</a>
+              target="_blank" title="JavaScript">JavaScript!</a>
           </div>
           <div class="col-xs-6 col-md-2">
-            <a href="https://jquery.com/" target="_blank" title="jQuery">
-              jQuery</a>
+            <a href="https://facebook.github.io/react/index.html" target="_blank"
+               title="React.js">React.js</a>
           </div>
           <div class="col-xs-6 col-md-2">
-            <a href="https://nodejs.org/" target="_blank" title="Nodejs">
-              Nodejs</a>
-          </div>
-          <div class="col-xs-6 col-md-2">
-            <a href="http://gulpjs.com/" target="_blank"
-              title="GulpJS">GulpJS</a>
-          </div>
-          <div class="col-xs-6 col-md-2">
-            <a href="http://bower.io/" target="_blank"
-              title="Bower">Bower</a>
+            <a href="https://webpack.github.io/" target="_blank" title="Webpack">
+              Webpack</a>
           </div>
           <div class="col-xs-6 col-md-2">
             <a href="https://babeljs.io/" target="_blank"
               title="Babel">Babel</a>
           </div>
           <div class="col-xs-6 col-md-2">
+            <a href="https://nodejs.org/" target="_blank" title="Nodejs">
+              Nodejs</a>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <a href="http://expressjs.com/en/index.html" target="_blank" title="Expressjs">
+              Expressjs</a>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <a href="https://www.npmjs.com/" target="_blank" title="NPM">
+              NPM</a>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <a href="https://www.mongodb.org/" target="_blank"
+               title="MongoDB">MongoDB</a>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <a href="https://www.firebase.com/" target="_blank"
+               title="FireBaseDB">FireBaseDB</a>
+          </div>
+          <div class="col-xs-6 col-md-2">
             <a href="https://angularjs.org/" target="_blank"
               title="AngularJS">AngularJS</a>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <a href="https://jquery.com/" target="_blank" title="jQuery">
+              jQuery</a>
+          </div>
+
+          <div class="col-xs-6 col-md-2">
+            <a href="http://gulpjs.com/" target="_blank"
+              title="GulpJS">GulpJS</a>
           </div>
           <div class="col-xs-6 col-md-2">
             <a href="http://www.w3.org/" target="_blank"
@@ -327,16 +388,20 @@ tree/master"
               title="World Wide Web Consortium">CSS3</a>
           </div>
           <div class="col-xs-6 col-md-2">
-            <a href="http://getbootstrap.com/" target="_blank"
-              title="Bootstrap">Bootstrap</a>
-          </div>
-          <div class="col-xs-6 col-md-2">
             <a href="http://sass-lang.com/" target="_blank"
               title="Sass">Sass</a>
           </div>
           <div class="col-xs-6 col-md-2">
             <a href="https://github.com/" target="_blank" title="GitHub">
               GitHub</a>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <a href="https://mochajs.org/" target="_blank" title="Mocha">
+              Mocha</a>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <a href="http://chaijs.com/" target="_blank"
+              title="Chai">Chai</a>
           </div>
 
           <h3 class="col-xs-12">Other areas</h3>
@@ -389,7 +454,7 @@ tree/master"
 
     </main>
 
-    <footer id="contact" class="text-center">
+    <footer id="contact" class="text-center footer">
       <header class="col-xs-12">
         <h2>Contact Me!</h2>
       </header><!-- /contact -->
@@ -489,8 +554,8 @@ tree/master"
       </div>
     </footer>
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/dist/main.min.js"></script>
   </body>
 </html>

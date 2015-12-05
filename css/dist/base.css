@@ -1,6 +1,6 @@
 html {
   font-size: 100%;
-  line-height: 1.75em;
+  line-height: 1.4375em;
 }
 
 a {
@@ -57,7 +57,7 @@ html, body {
 }
 .navbar-default .navbar-nav .nav-link {
   font-size: 2.1875em;
-  line-height: 1.6em;
+  line-height: 1.31429em;
   float: none;
   display: inline-block;
   margin-right: 2em;
@@ -122,7 +122,7 @@ html, body {
 }
 .jumbotron h1 {
   font-size: 10.3125em;
-  line-height: 1.18788em;
+  line-height: 1.11515em;
   transform: rotateY(40deg);
   text-shadow: 5px 3px 2px #291f0c;
   animation-name: swing;
@@ -133,13 +133,13 @@ html, body {
 @media only screen and (min-device-width: 375px) and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 899px) {
   .jumbotron h1 {
     font-size: 5.3125em;
-    line-height: 1.31765em;
+    line-height: 1.08235em;
   }
 }
 .jumbotron h2 {
   font-size: 2.1875em;
-  line-height: 1.6em;
-  margin-top: 0.8em;
+  line-height: 1.31429em;
+  margin-top: 0.65714em;
   padding: 0;
   font-style: italic;
   text-shadow: 5px 3px 2px #291f0c;
@@ -147,12 +147,12 @@ html, body {
 @media only screen and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 899px) {
   .jumbotron h2 {
     font-size: 2.1875em;
-    line-height: 1.6em;
+    line-height: 1.31429em;
   }
 }
 .jumbotron h2 i {
   font-size: 2.8125em;
-  line-height: 1.24444em;
+  line-height: 1.53333em;
   margin-top: 1em;
   text-shadow: 5px 3px 2px #291f0c;
 }
@@ -162,10 +162,10 @@ html, body {
 
 .subheading h2 {
   font-size: 3.4375em;
-  line-height: 1.52727em;
+  line-height: 1.25455em;
   border-bottom-width: 0.09091em;
   border-bottom-style: solid;
-  padding-bottom: 0.16364em;
+  padding-bottom: 0.11818em;
   color: #1a260f;
   text-shadow: -3px 3px 2px rgba(13, 19, 33, 0.6);
 }
@@ -186,7 +186,7 @@ html, body {
 }
 #social-nav .socials {
   font-size: 1.875em;
-  line-height: 1.86667em;
+  line-height: 1.53333em;
   margin: 0;
   padding: 0 0.5em;
   background: rgba(179, 133, 53, 0.3);
@@ -196,7 +196,7 @@ html, body {
 @media only screen and (max-width: 699px) {
   #social-nav .socials {
     font-size: 1.875em;
-    line-height: 1.86667em;
+    line-height: 1.53333em;
     padding: 0.25em 0.5em;
     margin: 0 0.5em;
   }
@@ -206,18 +206,33 @@ html, body {
   background: rgba(179, 133, 53, 0.8);
 }
 
-#bio {
+#bio .intro {
   font-size: 1.875em;
-  line-height: 1.86667em;
-  margin-top: 0.93333em;
-  margin-bottom: 0.93333em;
+  line-height: 1.53333em;
+  margin-top: 0.76667em;
+  margin-bottom: 0.76667em;
 }
 @media only screen and (max-width: 699px) {
-  #bio {
+  #bio .intro {
     font-size: 1.4375em;
-    line-height: 1.21739em;
-    margin-top: 1.21739em;
+    line-height: 2em;
+    margin-top: 1em;
   }
+}
+
+.personal-info, .education-info {
+  font-size: 1.625em;
+  line-height: 1.76923em;
+}
+@media only screen and (max-width: 699px) {
+  .personal-info, .education-info {
+    font-size: 1.25em;
+    line-height: 2.3em;
+  }
+}
+.personal-info .quote, .education-info .quote {
+  font-size: 1.25em;
+  line-height: 2.3em;
 }
 
 .project-wrapper {
@@ -280,7 +295,7 @@ html, body {
 
 .projects p {
   font-size: 1.75em;
-  line-height: 2em;
+  line-height: 1.64286em;
 }
 .projects p code {
   background: #0D1321;
@@ -292,23 +307,23 @@ html, body {
 @media only screen and (max-width: 899px) {
   .projects p {
     font-size: 1.375em;
-    line-height: 1.27273em;
-    margin-top: 0.63636em;
+    line-height: 2.09091em;
+    margin-top: 0.52273em;
   }
 }
 @media only screen and (max-width: 699px) {
   .projects p {
     font-size: 1.4375em;
-    line-height: 1.21739em;
-    margin-top: 0.6087em;
+    line-height: 2em;
+    margin-top: 0.5em;
   }
 }
 
 .project-title h3 {
   font-size: 2.1875em;
-  line-height: 1.6em;
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
+  line-height: 1.31429em;
+  margin-top: 0.65714em;
+  margin-bottom: 0.65714em;
   color: #004E40;
   font-weight: 700;
 }
@@ -325,33 +340,33 @@ html, body {
 
 #skills h3 {
   font-size: 1.4375em;
-  line-height: 1.21739em;
-  margin-top: 0.30435em;
+  line-height: 2em;
+  margin-top: 0.25em;
   font-style: italic;
   color: #004E40;
 }
 @media only screen and (max-width: 699px) {
   #skills h3 {
     font-size: 1.25em;
-    line-height: 1.4em;
-    margin-top: 0.35em;
+    line-height: 2.3em;
+    margin-top: 0.2875em;
   }
 }
 #skills div {
   font-size: 1.5625em;
-  line-height: 2.24em;
+  line-height: 1.84em;
 }
 @media only screen and (max-width: 699px) {
   #skills div {
     font-size: 1.4375em;
-    line-height: 1.21739em;
+    line-height: 2em;
     margin-top: 0.5em;
   }
 }
 
 #life-interest p {
   font-size: 2.1875em;
-  line-height: 1.6em;
+  line-height: 1.31429em;
   color: #087E8B;
   font-weight: 700;
   border-radius: 20em;
@@ -360,39 +375,39 @@ html, body {
 @media only screen and (max-width: 699px) {
   #life-interest p {
     font-size: 2em;
-    line-height: 1.75em;
+    line-height: 1.4375em;
   }
 }
 
-footer {
+.footer {
   background: linear-gradient(to top, #080c03, #15210a, #202e12, #30451b);
   color: #B38535;
 }
-footer h2 {
+.footer h2 {
   font-size: 4.375em;
-  line-height: 1.2em;
+  line-height: 1.31429em;
   border-bottom-width: 0.07143em;
   border-bottom-style: solid;
-  padding-bottom: 0.12857em;
+  padding-bottom: 0.09286em;
   margin: 0 auto;
   border-color: rgba(179, 133, 53, 0.5);
   width: 50%;
 }
 @media only screen and (max-width: 699px) {
-  footer h2 {
+  .footer h2 {
     font-size: 2.5em;
-    line-height: 1.4em;
+    line-height: 1.15em;
   }
 }
-footer a {
+.footer a {
   font-size: 2.5em;
-  line-height: 1.4em;
+  line-height: 1.15em;
   color: #B38535;
 }
 
 #contact button[name='email'] {
   font-size: 2.1875em;
-  line-height: 1.6em;
+  line-height: 1.31429em;
   color: #087E8B;
   background: transparent;
   border: 0;
@@ -403,7 +418,7 @@ footer a {
 }
 #contact a[title^='Send me'] {
   font-size: 2.1875em;
-  line-height: 1.6em;
+  line-height: 1.31429em;
   color: #087E8B;
   background: transparent;
   border: 0;

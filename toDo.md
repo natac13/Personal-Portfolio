@@ -1,2 +1,0 @@
-- add Simon Game to project
-- - add links to the Github repo explicitly

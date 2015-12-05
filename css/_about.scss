@@ -1,12 +1,26 @@
 
 #bio {
-    @include adjust-font-size-to(30px);
-    @include leader(1, 30px);
-    @include trailer(1, 30px);
+    .intro {
+      @include adjust-font-size-to(30px);
+      @include leader(1, 30px);
+      @include trailer(1, 30px);
 
-    @media only screen and (max-width: 699px) {
-            @include adjust-font-size-to(23px);
-            @include leader(1, 23px);
+      @media only screen and (max-width: 699px) {
+              @include adjust-font-size-to(23px);
+              @include leader(1, 23px);
+          }
+    }
+
+}
+
+.personal-info, .education-info {
+  @include adjust-font-size-to(26px);
+
+  @media only screen and (max-width: 699px) {
+            @include adjust-font-size-to(20px);
         }
 
+  .quote {
+    @include adjust-font-size-to(20px);
+  }
 }

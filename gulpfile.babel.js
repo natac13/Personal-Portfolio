@@ -31,7 +31,7 @@ const paths = {
     allscss: 'css/*.scss',
     imgs: 'images/*',
     html: './index.html'
-}
+};
 
 
 gulp.task('scripts', function() {
@@ -84,7 +84,7 @@ gulp.task('serve', ['css'], function() {
 
     browserSync({
         server: "./",
-        port: 8880
+        port: 3000
 
     });
 

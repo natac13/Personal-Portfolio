@@ -4,7 +4,7 @@
   "description": "This is my current portfolio page. It is live at [My Portfolio!!](http://seancampbellnatac.com). Any feedback is more than welcome as I am still trying to learn and constantly improve!",
   "main": "index.html",
   "scripts": {
-    "start": "http-server -p 8088 -o"
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
