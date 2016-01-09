@@ -16,6 +16,7 @@
 
     .socials {
         @include adjust-font-size-to(30px);
+        width: auto;
         margin: 0;
         padding: 0 0.5em;
         background: rgba($header-color, 0.3);

@@ -58,24 +58,20 @@
             title="Wordpress Account" target="_blank">
             <i class="fa fa-wordpress"></i> <span class="hidden-xs">Blog</span>
           </a>
-          <a href="http://codepen.io/natac13/" class="btn socials"
-            title="CodePen Account" target="_blank">
-            <i class="fa fa-codepen"></i> <span class="hidden-xs">CodePen</span>
-          </a>
-        </div>
-        <div class="row">
-          <a href="http://www.freecodecamp.com/natac13" target="_blank"
-            class="btn socials hidden-xs" title="Free Code Camp Account" >
-            Free Code Camp
+          <a href="https://twitter.com/natac1311" class="btn socials"
+            title="Twitter Account" target="_blank">
+            <i class="fa fa-twitter"></i> <span class="hidden-xs">Twitter</span>
           </a>
           <a href="https://ca.linkedin.com/pub/sean-campbell/b4/862/b90"
             class="btn socials" title="LinkedIn Account" target="_blank">
             <i class="fa fa-linkedin"></i> <span class="hidden-xs">
               LinkedIn</span>
           </a>
-          <a href="https://twitter.com/natac1311" class="btn socials"
-            title="Twitter Account" target="_blank">
-            <i class="fa fa-twitter"></i> <span class="hidden-xs">Twitter</span>
+        </div>
+        <div class="row">
+          <a href="http://www.freecodecamp.com/natac13/front-end-certification" target="_blank"
+            class="btn socials" title="Free Code Camp Account" >
+            <span class="hidden-xs">Free Code Camp's</span> Front-end <span class="hidden-xs">Developer</span> Certificate
           </a>
         </div>
       </section>
@@ -95,15 +91,6 @@ of knowledge to the edge. I obtained my current skills in web development throug
 my natural drive and ambition for lifelong erudition. I focused each moment of free
 time away from my electrical construction job to immerse myself with tutorials,
 documentation, blogs and podcast.</p>
-        <div class="col-md-12 education-info">
-          <a href="#education-info" data-toggle="collapse">Where I got my Knowledge</a>
-          <div class="collapse" id="education-info">
-            <p>
-              Finding <a href="https://freecodecamp.com">Free Code Camp</a> and working
-              through the coursework, which is about <a href="https://medium.freecodecamp.com/learn-to-code-by-coding-d1e241de81c0#.v74xfsicx">learning to code by coding</a>, gave me direction and incremental challenges and 'waypoints' to build understanding from the ground up. Two other sites that have helped me - <a href="https://www.codeschool.com/paths">Code School</a> and <a href="https://egghead.io/">Egghead.io</a>. To obtain the front-end developer certificate from Free Code Camp you are required to complete 10 front-end projects based solely off Agile user stories and a demo project. The idea is to reverse engineer the application. I am at 9 projects completed and when I finish up with the last project, this sentence will get changed. The certificate will also be added to show my completion.
-            </p>
-          </div>
-        </div>
 
         <div class="col-md-12 personal-info">
           <a href="#more-about" data-toggle="collapse">Me Personally</a>
@@ -120,8 +107,16 @@ documentation, blogs and podcast.</p>
                 <footer>Albert Einstein</footer>
               </blockquote>
             </div>
+          </div>
+        </div>
 
-
+        <div class="col-md-12 education-info">
+          <a href="#education-info" data-toggle="collapse">Where I got my Knowledge</a>
+          <div class="collapse" id="education-info">
+            <p>
+              Finding <a href="https://freecodecamp.com">Free Code Camp</a> and working
+              through the coursework, which is about <a href="https://medium.freecodecamp.com/learn-to-code-by-coding-d1e241de81c0#.v74xfsicx" target="_blank">learning to code by coding</a>, gave me direction and incremental challenges and 'waypoints' to build understanding from the ground up. Two other sites that have helped me - <a href="https://www.codeschool.com/paths" target="_blank">Code School</a> and <a href="https://egghead.io/" target="_blank">Egghead.io</a>. To obtain the front-end developer certificate from Free Code Camp you are required to complete 10 front-end projects based solely off Agile user stories and a demo project. The idea is to reverse engineer the application. I am at 9 projects completed and when I finish up with the last project, this sentence will get changed. The certificate will also be added to show my completion.
+            </p>
           </div>
         </div>
       </section>
@@ -136,6 +131,44 @@ documentation, blogs and podcast.</p>
 
 <!--##################           Projects             #######################-->
       <section class="projects">
+
+        <div class="row">
+          <header class="project-title col-xs-12">
+            <h3>Tic Tac Toe Game ->
+                <a href="https://github.com/natac13/Tic-Tac-Toe-Game"
+                class="git-link" target="_blank">Code On GitHub</a>
+            </h3>
+          </header><!-- /header -->
+          <div class="col-sm-4 col-sm-offset-1 project-wrapper">
+            <a href="http://natac13.github.io/Tic-Tac-Toe-Game/"
+          target="_blank"><img src="img/TicTacToe.png"
+              alt="Wikipedia Seach" class="img-responsive">
+            </a>
+          </div>
+          <div class="col-sm-5 col-sm-offset-1">
+            <p>This project was build with <a href="https://facebook.github.io/react/" target="_blank">React</a> and <a href="https://github.com/rackt/redux" target="_blank">Redux</a> which I find incredible to work with. The build process used Webpack to bundle everything up. This was my last project before I was able to the <a href="http://www.freecodecamp.com/natac13/front-end-certification" target="_blank">Front-end Certificate</a> from Free Code Camp. The AI was the tricky part in the app. I found a <a href="http://stackoverflow.com/questions/125557/what-algorithm-for-a-tic-tac-toe-game-can-i-use-to-determine-the-best-move-for" target="_blank">stackoverflow.com</a> answer which laid out 8 rules to follow to never lose at Tic Tac Toe. I turned these into <a href="https://github.com/natac13/Tic-Tac-Toe-Game/blob/gh-pages/app/utils/compTurn.js#L35-L42" target="_blank">functions</a> (<a href="https://github.com/natac13/Tic-Tac-Toe-Game/tree/gh-pages/app/utils/AI" target="_blank">defined here</a>) which will either return the square for the computer to occupy or false so that the next 'rule' function is called. I will admit these were changed a few times after sending the game out for testing in the local developer community. I was even fortunate to get a video from one of the testers showing me how he was able to beat the game. However as it stands none of original testers can beat my implementation. <em>Can you?</em></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <header class="project-title col-xs-12">
+            <h3>Markdown Previewer -> <a href="https://github.com/natac13/Markdown-Previewer-React"
+              class="git-link" target="_blank">
+              Code On GitHub
+            </a></h3>
+          </header><!-- /header -->
+          <div class="col-sm-4 col-sm-offset-1 col-sm-push-5 project-wrapper">
+            <a href="http://natac13.github.io/Markdown-Previewer-React/"
+              target="_blank"><img src="img/MarkdownPreviewer.png"
+              alt="Markdown Previewer"
+              class="img-responsive alt">
+            </a>
+          </div>
+          <div class="col-sm-5 col-sm-offset-1 col-sm-pull-5">
+          <p>My Markdown Previewer project. Free Code Camp's first <a href="https://facebook.github.io/react/" target="_blank">React</a> + <a href="http://sass-lang.com/" target="_blank">Sass</a> application, as well as the tutorial project on the React site. A simple project to get introduced to React. However this was not my first. After leading about CSS modules and how to structure the components in there own folders, this project was a nice way to dive into those best practices. I was able to lead about using <a href="https://github.com/commitizen/cz-cli" target="_blank">commitizen</a> to write better commits as well as getting more comfortable with a more solid workflow (deploying with <a href="https://github.com/tschaub/gh-pages" target="_blank">gh-pages</a>, dev vs prod webpack config, etc).</p>
+          </div>
+        </div>
+
         <div class="row">
           <header class="project-title col-xs-12">
             <h3>Wikipedia Mock Search ->
